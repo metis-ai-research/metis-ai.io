@@ -1,0 +1,32 @@
+.header {
+    background-color: #020816;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:  #FFFFFF;
+  }
+  
+  .nav-link {
+    color: #A0AEC0;
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
