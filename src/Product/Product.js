@@ -5,26 +5,25 @@ const Product = () => {
   return (
     <div className="product-container">
       <div className="product-grid">
-        {/* Left Section */}
         <div className="product-left">
           <div className="product-badge">Our Product</div>
-          <h2 className="product-title">Transform Your Ideas into Reality</h2>
+          <h2 className="product-title">
+            Transform <br />
+            Your Ideas into <br />
+            Reality
+          </h2>
           <p className="product-description">
             At Metis AI Solutions, our product is the result of cutting-edge
             technology, thoughtful design, and years of expertise. Here’s what
             makes it unique:
           </p>
         </div>
-
-        {/* Right Section: Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Feature 1 */}
+        <div className="product-right">
           <div className="product-feature">
             <img
               src="/images/rocket.svg"
               alt="Powered by Advanced AI"
-              width="40"
-              height="40"
+              className="product-icons"
             />
             <h4>Powered by Advanced AI</h4>
             <p>
@@ -32,14 +31,11 @@ const Product = () => {
               faster, and more efficient solutions designed for modern users.
             </p>
           </div>
-
-          {/* Feature 2 */}
           <div className="product-feature">
             <img
               src="/images/design.svg"
               alt="Designed for Users"
-              width="40"
-              height="40"
+              className="product-icons"
             />
             <h4>Designed for Users</h4>
             <p>
@@ -48,14 +44,11 @@ const Product = () => {
               intuitive experiences.
             </p>
           </div>
-
-          {/* Feature 3 */}
           <div className="product-feature">
             <img
               src="/images/experience.svg"
               alt="Highly Experienced"
-              width="40"
-              height="40"
+              className="product-icons"
             />
             <h4>Highly Experienced</h4>
             <p>
@@ -63,14 +56,11 @@ const Product = () => {
               leveraging industry-leading expertise in every solution.
             </p>
           </div>
-
-          {/* Feature 4 */}
           <div className="product-feature">
             <img
               src="/images/diverse.svg"
               alt="Diverse Team"
-              width="40"
-              height="40"
+              className="product-icons"
             />
             <h4>Diverse Team</h4>
             <p>

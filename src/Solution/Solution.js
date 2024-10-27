@@ -6,12 +6,12 @@ const Solution = () => {
     <div className="solution-container">
       <div className="solution-content">
         {/* Title */}
-        <div className="solution-badge">Why Choose Metis AI</div>
+        <h3 className="solution-badge">Why Choose Metis AI</h3>
         <h2 className="solution-title">Your Ultimate AI Solution</h2>
         <p className="solution-description">
           At Metis AI Solutions, we are more than just a technology company — we
-          are a partner in innovation. Here’s why you should trust us with your
-          next project:
+          are <br /> a partner in innovation. Here’s why you should trust us
+          with your next project:
         </p>
 
         {/* Features */}
@@ -19,7 +19,7 @@ const Solution = () => {
           {/* Feature 1 */}
           <div className="solution-feature">
             <div className="text-left">
-              <h4 className="feature-title">AI-Driven Innovation</h4>
+              <h6 className="feature-title">AI-Driven Innovation</h6>
               <p className="feature-description">
                 Our cutting-edge AI adapts to your needs, delivering solutions
                 that grow with you, helping you meet today’s goals, and keeping

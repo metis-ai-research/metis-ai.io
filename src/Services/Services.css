@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     background: radial-gradient(57% 63% at 50% -27.2%, #BCF682 0%, #55E1DD 21.41%, #00649E 42.81%, #020816 100%);
     background-size: cover;
   }
@@ -44,20 +43,16 @@
   
   .services-title {
     color: #ffffff;
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 24px;
   }
   
-  @media (min-width: 768px) {
-    .services-title {
-      font-size: 3.75rem;
-    }
-  }
   
   .services-description {
     color: #AEAEB8;
-    font-size: 1.125rem;
+    font-size: 18px;
     margin-bottom: 1.5rem;
   }
   
@@ -72,6 +67,7 @@
     font-size: 16px;
     font-weight: 400;
     background: linear-gradient(180deg, #025BCF 0%, #0091BD 100%);
+    line-height: 26px;
   }
   
   .services-image {

@@ -3,28 +3,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 1rem;
     background-color: #020816;
   }
   
   .product-grid {
-    max-width: 72rem;
-    margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 346px 648px;
+    gap: 32px;
+    margin: auto;
     align-items: start;
-}
-  
-  @media (min-width: 768px) {
-    .product-grid {
-      grid-template-columns: 1fr 1fr;
-    }
   }
   
   .product-left {
     flex-direction: column;
     gap: 1rem;
+    width: 346px;
+    height: 318px;
+  }
+  
+  .product-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    width: 648px;
+    height: 608px;
   }
   
   .product-badge {
@@ -34,8 +36,6 @@
     border-radius: 84px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 8px 16px;
-    width: auto;
-    height: 36px;
     white-space: nowrap;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(229, 229, 232, 0.1) 100%);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
@@ -47,41 +47,47 @@
   }
   
   .product-title {
-    font-size: 2.25rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  @media (min-width: 768px) {
-    .product-title {
-      font-size: 3rem;
-    }
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
   }
   
   .product-description {
     color: #9CA3AF;
-    font-size: 1.125rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
   }
   
   .product-feature {
-    background-color: #020816;
-    border: 1px solid #374151;
-    padding: 1.5rem;
+    background: rgba(2, 8, 22, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 32px;
     border-radius: 0.75rem;
     text-align: left;
+    width: 308px;
+    height: 290px;
   }
   
   .product-feature h4 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 0.75rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
   }
   
   .product-feature p {
     color: #9CA3AF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 8px;
   }
   
-  .product-feature img {
-    margin-bottom: 1rem;
+  .product-icons {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
   }
+  
