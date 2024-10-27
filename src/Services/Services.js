@@ -30,7 +30,7 @@ const Services = () => {
           <img
             src="/images/ai-image.png"
             alt="AI Assistance"
-            className="services-image"
+            className="services-image w-full h-auto animate-float"
           />
         </div>
       </div>
