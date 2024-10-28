@@ -69,3 +69,9 @@
     width: 83px;
     height: 32px;
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 15px;
+    }
+  }

@@ -41,13 +41,13 @@
     flex-basis: 50%;
     text-align: center;
   }
-  
+
   @media (min-width: 768px) {
     .vision-text {
       text-align: left;
     }
   }
-  
+
   .vision-badge {
     display: inline-flex;
     align-items: center;
@@ -74,13 +74,7 @@
     color: #ffffff;
     line-height: 48px;
   }
-  
-  @media (min-width: 768px) {
-    .vision-title {
-      font-size: 3rem;
-    }
-  }
-  
+
   .vision-description {
     font-size: 16px;
     color: #9ca3af;
@@ -88,4 +82,27 @@
     line-height: 26px;
     font-weight: 400;
   }
+
+  @media (max-width: 768px) {
+    .vision-container {
+      padding-bottom: 20rem;
+    }
+
+    .vision-content, .solution-content {
+      padding: 0 1rem;
+    }
   
+    .vision-title, .solution-title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    .vision-description, .solution-description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .vision-image {
+      margin-top: 10px;
+    }
+  }

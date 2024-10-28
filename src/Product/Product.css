@@ -90,4 +90,45 @@
     height: 40px;
     margin-bottom: 20px;
   }
+
+  @media (max-width: 768px) {
+    .product-container {
+      padding: 30px 30px 50rem 30px;
+      height: 100%;
+    }
   
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+  
+    .product-left {
+      width: 100%;
+    }
+  
+    .product-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+    }
+  
+    .product-title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+  
+    .product-description {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+  
+    .product-feature {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
