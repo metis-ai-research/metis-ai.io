@@ -76,6 +76,10 @@
   }
 
   @media (max-width: 768px) {
+    .services-container {
+      padding: 15px;
+    }
+
     .services-content {
       flex-direction: column;
       align-items: center;
@@ -104,5 +108,17 @@
       width: 100%;
       height: auto;
       margin-top: 16px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .services-image {
+      margin-bottom: 250px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .services-image {
+      margin-bottom: 250px;
     }
   }

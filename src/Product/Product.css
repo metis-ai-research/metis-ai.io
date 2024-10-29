@@ -91,7 +91,7 @@
     margin-bottom: 20px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .product-container {
       padding: 30px 30px 50rem 30px;
       height: 100%;
@@ -130,5 +130,20 @@
       width: 100%;
       height: auto;
       margin-bottom: 20px;
+    }
+  }
+
+
+  @media (max-width: 368px) {
+    .product-container {
+      padding: 30px 30px 52rem 30px;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 344px) {
+    .product-container {
+      padding: 30px 30px 60rem 30px;
+      height: 100%;
     }
   }
