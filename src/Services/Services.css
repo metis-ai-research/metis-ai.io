@@ -1,0 +1,124 @@
+.services-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(57% 63% at 50% -27.2%, #BCF682 0%, #55E1DD 21.41%, #00649E 42.81%, #020816 100%);
+    background-size: cover;
+  }
+  
+  .services-content {
+    max-width: 72rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .services-content {
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+  }
+
+  .services-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 84px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    width: auto;
+    height: 36px;
+    white-space: nowrap;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(229, 229, 232, 0.1) 100%);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+  }
+  
+  .services-title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 24px;
+  }
+  
+  
+  .services-description {
+    color: #AEAEB8;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-button {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 8px;
+    width: 126px;
+    height: 40px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    background: linear-gradient(180deg, #025BCF 0%, #0091BD 100%);
+    line-height: 26px;
+  }
+  
+  .services-image {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 15px;
+    }
+
+    .services-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+  
+    .services-title {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+  
+    .services-description {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+  
+    .contact-button {
+      width: auto;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .services-image {
+      width: 100%;
+      height: auto;
+      margin-top: 16px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .services-image {
+      margin-bottom: 250px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .services-image {
+      margin-bottom: 250px;
+    }
+  }
