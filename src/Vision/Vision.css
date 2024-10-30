@@ -22,6 +22,10 @@
       flex-direction: row;
       gap: 2.5rem;
     }
+
+    .vision-container {
+      margin-top: -20rem;
+    }
   }
   
   .vision-images {
