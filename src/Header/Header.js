@@ -7,7 +7,7 @@ const Header = () => {
       {/* Company Logo */}
       <div className="header-logo">
         <img
-          src="/images/brandmark.svg"
+          src="images/brandmark.svg"
           alt="Metis AI Logo"
           className="logo-image"
         />

@@ -21,7 +21,7 @@ const Product = () => {
         <div className="product-right">
           <div className="product-feature">
             <img
-              src="/images/rocket.svg"
+              src="images/rocket.svg"
               alt="Powered by Advanced AI"
               className="product-icons"
             />
@@ -33,7 +33,7 @@ const Product = () => {
           </div>
           <div className="product-feature">
             <img
-              src="/images/design.svg"
+              src="images/design.svg"
               alt="Designed for Users"
               className="product-icons"
             />
@@ -46,7 +46,7 @@ const Product = () => {
           </div>
           <div className="product-feature">
             <img
-              src="/images/experience.svg"
+              src="images/experience.svg"
               alt="Highly Experienced"
               className="product-icons"
             />
@@ -58,7 +58,7 @@ const Product = () => {
           </div>
           <div className="product-feature">
             <img
-              src="/images/diverse.svg"
+              src="images/diverse.svg"
               alt="Diverse Team"
               className="product-icons"
             />

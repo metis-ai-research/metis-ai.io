@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Company Logo */}
         <div className="footer-logo">
           <span className="footer-logo-image">
-            <img src="/images/logo.png" alt="Metis AI logo" />
+            <img src="images/logo.png" alt="Metis AI logo" />
           </span>
         </div>
 

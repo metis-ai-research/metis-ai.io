@@ -28,7 +28,7 @@ const Services = () => {
         {/* Right Section: Image */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/images/ai-image.png"
+            src="images/ai-image.png"
             alt="AI Assistance"
             className="services-image w-full h-auto animate-float"
           />
