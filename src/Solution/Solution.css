@@ -84,7 +84,15 @@
 
   @media (max-width: 960px) {
     .solution-title {
-      font-size: 3rem;
+      font-size: 26px;
+    }
+
+    .solution-content {
+      gap: 0;
+    }
+
+    .solution-description {
+      margin-bottom: 0;
     }
   
     .solution-features {

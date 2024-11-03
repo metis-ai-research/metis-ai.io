@@ -92,21 +92,23 @@
       padding-bottom: 20rem;
     }
 
-    .vision-content, .solution-content {
+    .vision-content {
       padding: 0 1rem;
     }
   
-    .vision-title, .solution-title {
-      font-size: 28px;
+    .vision-title {
+      font-size: 26px;
       line-height: 36px;
     }
   
-    .vision-description, .solution-description {
+    .vision-description {
       font-size: 14px;
       line-height: 22px;
     }
 
     .vision-image {
+      width: 100%;
+      height: auto; 
       margin-top: 10px;
     }
   }

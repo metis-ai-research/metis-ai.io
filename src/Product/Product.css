@@ -115,7 +115,7 @@
     }
   
     .product-title {
-      font-size: 24px;
+      font-size: 26px;
       line-height: 32px;
       margin-bottom: 12px;
     }
@@ -135,6 +135,10 @@
 
 
   @media (max-width: 368px) {
+    .product-title {
+      font-size: 26px;
+    }
+
     .product-container {
       padding: 30px 30px 52rem 30px;
       height: 100%;
@@ -145,5 +149,12 @@
     .product-container {
       padding: 30px 30px 60rem 30px;
       height: 100%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .product-left {
+      width: 100%;
+      height: auto;
     }
   }
