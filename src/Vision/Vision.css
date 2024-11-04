@@ -88,10 +88,6 @@
   }
 
   @media (max-width: 768px) {
-    .vision-container {
-      padding-bottom: 20rem;
-    }
-
     .vision-content {
       padding: 0 1rem;
     }
@@ -110,5 +106,17 @@
       width: 100%;
       height: auto; 
       margin-top: 10px;
+    }
+  }
+
+    @media (max-width: 375px) {
+    .vision-container {
+      padding-bottom: 10rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .vision-container {
+      padding-bottom: 10rem;
     }
   }
