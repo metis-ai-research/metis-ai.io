@@ -111,14 +111,14 @@
     }
   }
 
-  @media (max-width: 960px) {
-    .services-image {
-      margin-bottom: 250px;
-    }
-  }
-
   @media (max-width: 375px) {
     .services-image {
-      margin-bottom: 250px;
+      margin-bottom: 150px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .services-image {
+      margin-bottom: 100px;
     }
   }
