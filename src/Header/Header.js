@@ -16,7 +16,7 @@ const Header = () => {
 
       {/* Contact Us */}
       <nav>
-        <a href="mailto:contact@metisai.com" className="nav-link">
+        <a href="mailto:info@metis-ai.io" className="nav-link">
           Contact Us
         </a>
       </nav>
