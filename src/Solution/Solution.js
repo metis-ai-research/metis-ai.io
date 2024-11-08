@@ -1,12 +1,15 @@
 import React from "react";
+import Badge from "../Badge/Badge";
 import "./Solution.css";
 
 const Solution = () => {
   return (
-    <div className="solution-container pt-24 pb-20">
+    <div className="solution-container">
       <div className="solution-content">
         {/* Title */}
-        <h3 className="solution-badge">Why Choose Metis AI</h3>
+        <Badge
+          label="Why Choose Metis AI"
+        />
         <h2 className="solution-title">Your Ultimate AI Solution</h2>
         <p className="solution-description">
           At Metis AI Solutions, we are more than just a technology company — we

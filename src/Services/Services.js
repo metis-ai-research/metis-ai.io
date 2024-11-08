@@ -3,7 +3,7 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <div className="services-container pt-32">
+    <div className="services-container">
       <div className="services-content">
         {/* Left Section: Text */}
         <div className="md:w-1/2 text-center md:text-left">

@@ -4,6 +4,8 @@
     justify-content: center;
     background: radial-gradient(57% 63% at 50% -27.2%, #BCF682 0%, #55E1DD 21.41%, #00649E 42.81%, #020816 100%);
     background-size: cover;
+    padding-bottom: 70px;
+    padding-top: 105px;
   }
 
   .services-content {

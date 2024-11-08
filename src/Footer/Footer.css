@@ -1,5 +1,7 @@
 .footer-container {
-    background: radial-gradient(50% 100% at 50% 137.5%, #02303A 0%, rgba(0, 40, 60, 0.8) 23.91%, #020816 100%);
+  padding-top: 95px;
+  padding-bottom: 22px;
+  background: radial-gradient(50% 100% at 50% 137.5%, #02303A 0%, rgba(0, 40, 60, 0.8) 23.91%, #020816 100%);
 }
 
 .footer-content {
@@ -9,7 +11,7 @@
     width: 1014px;
     margin: 0 auto;
     gap: 40px;
-    padding-bottom: 1rem;
+    padding-bottom: 22px;
 }
 
 .footer-logo {

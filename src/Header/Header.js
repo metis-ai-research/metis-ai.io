@@ -8,11 +8,10 @@ const Header = () => {
         {/* Company Logo */}
         <div className="header-logo">
           <img
-            src="images/brandmark.svg"
+            src="images/header-logo.svg"
             alt="Metis AI Logo"
             className="logo-image"
           />
-          <span className="logo-text">metis ai</span>
         </div>
 
         {/* Contact Us */}

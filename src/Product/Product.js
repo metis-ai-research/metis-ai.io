@@ -1,4 +1,5 @@
 import React from "react";
+import Badge from "../Badge/Badge";
 import "./Product.css";
 
 const Product = () => {
@@ -6,7 +7,7 @@ const Product = () => {
     <div className="product-container pt-24 pb-24">
       <div className="product-content">
         <div className="product-left">
-          <div className="product-badge">Our Product</div>
+          <Badge label="Our Product" />
           <h2 className="product-title">
             Transform <br />
             Your Ideas into <br />

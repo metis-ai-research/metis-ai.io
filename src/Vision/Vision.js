@@ -1,9 +1,10 @@
 import React from "react";
+import Badge from "../Badge/Badge";
 import "./Vision.css";
 
 const Vision = () => {
   return (
-    <div className="vision-container pt-36 pb-16">
+    <div className="vision-container">
       <div className="vision-content">
         {/* Left Section: Images */}
         <div className="vision-images">
@@ -12,7 +13,7 @@ const Vision = () => {
 
         {/* Right Section: Text */}
         <div className="vision-text">
-          <div className="vision-badge">Our Vision</div>
+          <Badge label="Our Vision" />
           <h1 className="vision-title">Enhancing Everyday Life Through AI</h1>
           <p className="vision-description">
             Our vision is to revolutionize how people live and work by

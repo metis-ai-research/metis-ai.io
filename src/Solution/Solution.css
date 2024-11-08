@@ -1,4 +1,6 @@
 .solution-container {
+    padding-top: 95px;
+    padding-bottom: 58px;
     background: radial-gradient(65% 100% at 0% 0%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
   }
 
@@ -20,7 +22,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 8px 16px;
     width: auto;
-    height: 36px;
+    height: 30px;
     white-space: nowrap;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(229, 229, 232, 0.1) 100%);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
@@ -44,7 +46,7 @@
     color: rgba(174, 174, 184, 1);
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
   }
 
   .solution-features {
