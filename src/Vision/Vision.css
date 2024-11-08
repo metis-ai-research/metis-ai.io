@@ -1,33 +1,20 @@
 .vision-container {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     background: radial-gradient(66% 79% at 0% 100%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
     background-size: cover;
-    height: 592px;
   }
-  
+
   .vision-content {
-    max-width: 72rem;
+    width: 1014px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 16px;
   }
-  
-  @media (min-width: 768px) {
-    .vision-content {
-      flex-direction: row;
-      gap: 2.5rem;
-    }
 
-    .vision-container {
-      margin-top: -20rem;
-    }
-  }
-  
+
   .vision-images {
     flex-basis: 50%;
     display: flex;
@@ -35,22 +22,18 @@
     align-items: center;
     gap: 1rem;
   }
-  
+
   .vision-image {
-    width: 480px;
-    height: 400px;
+    width: 520px;
+    left: -50px;
+    position: relative;
   }
-  
+
   .vision-text {
     flex-basis: 50%;
     text-align: center;
   }
 
-  @media (min-width: 768px) {
-    .vision-text {
-      text-align: left;
-    }
-  }
 
   .vision-badge {
     display: inline-flex;
@@ -70,7 +53,7 @@
     color: rgba(255, 255, 255, 1);
     margin-bottom: 24px;
   }
-  
+
   .vision-title {
     font-size: 40px;
     font-weight: 700;
@@ -91,12 +74,12 @@
     .vision-content {
       padding: 0 1rem;
     }
-  
+
     .vision-title {
       font-size: 26px;
       line-height: 36px;
     }
-  
+
     .vision-description {
       font-size: 14px;
       line-height: 22px;
@@ -104,19 +87,33 @@
 
     .vision-image {
       width: 100%;
-      height: auto; 
+      height: auto;
       margin-top: 10px;
     }
   }
 
-    @media (max-width: 375px) {
+  @media (max-width: 375px) {
     .vision-container {
       padding-bottom: 10rem;
     }
   }
-  
+
   @media (max-width: 360px) {
     .vision-container {
       padding-bottom: 10rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .vision-content {
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .vision-text {
+      text-align: left;
     }
   }

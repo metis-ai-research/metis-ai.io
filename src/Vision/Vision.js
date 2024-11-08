@@ -3,7 +3,7 @@ import "./Vision.css";
 
 const Vision = () => {
   return (
-    <div className="vision-container">
+    <div className="vision-container pt-36 pb-16">
       <div className="vision-content">
         {/* Left Section: Images */}
         <div className="vision-images">

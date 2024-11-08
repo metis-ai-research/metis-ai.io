@@ -3,7 +3,7 @@ import "./Solution.css";
 
 const Solution = () => {
   return (
-    <div className="solution-container">
+    <div className="solution-container pt-24 pb-20">
       <div className="solution-content">
         {/* Title */}
         <h3 className="solution-badge">Why Choose Metis AI</h3>

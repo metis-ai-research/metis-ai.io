@@ -1,4 +1,5 @@
 import React from "react";
+import '@fontsource/inter';
 import Services from "./Services/Services";
 import Vision from "./Vision/Vision";
 import Product from "./Product/Product";

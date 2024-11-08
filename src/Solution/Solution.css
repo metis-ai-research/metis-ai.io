@@ -1,18 +1,15 @@
 .solution-container {
-    min-height: 100vh;
-    padding: 3rem 1rem;
     background: radial-gradient(65% 100% at 0% 0%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
   }
-  
+
   .solution-content {
-    max-width: 72rem;
     margin: 0 auto;
     text-align: center;
-    gap: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 1014px;
   }
 
   .solution-badge {
@@ -47,14 +44,13 @@
     color: rgba(174, 174, 184, 1);
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
   }
-  
+
   .solution-features {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
   }
 
 
@@ -67,14 +63,14 @@
     display: flex;
     align-items: flex-start;
   }
-  
+
   .feature-title {
     font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 12px;
   }
-  
+
   .feature-description {
     color: #FFFFFF;
     font-size: 16px;
@@ -94,12 +90,12 @@
     .solution-description {
       margin-bottom: 0;
     }
-  
+
     .solution-features {
       grid-template-columns: 1fr;
     }
   }
-  
+
   @media (min-width: 1024px) {
     .solution-features {
       grid-template-columns: repeat(3, 1fr);

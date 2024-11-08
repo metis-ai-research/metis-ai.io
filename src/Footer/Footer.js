@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <footer className="footer-container pt-16 pb-4">
       <div className="footer-content">
         {/* Company Logo */}
         <div className="footer-logo">
@@ -38,7 +38,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-copyright">
-        ©2024 Metis AI. All rights reserved.
+        ©2024 Metis AI Research Inc. All rights reserved.
       </div>
     </footer>
   );

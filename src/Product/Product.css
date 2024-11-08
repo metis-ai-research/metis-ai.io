@@ -1,26 +1,26 @@
 .product-container {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #020816;
   }
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: 346px 648px;
-    gap: 32px;
-    margin: auto;
+
+  .product-content {
+    display: flex;
+    gap: 28px;
     align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    width: 1014px;
   }
-  
+
   .product-left {
     flex-direction: column;
     gap: 1rem;
     width: 346px;
     height: 318px;
   }
-  
+
   .product-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,7 +28,7 @@
     width: 648px;
     height: 608px;
   }
-  
+
   .product-badge {
     display: inline-flex;
     align-items: center;
@@ -45,7 +45,7 @@
     color: rgba(255, 255, 255, 1);
     margin-bottom: 24px;
   }
-  
+
   .product-title {
     font-size: 40px;
     line-height: 48px;
@@ -53,14 +53,14 @@
     color: #FFFFFF;
     margin-bottom: 20px;
   }
-  
+
   .product-description {
     color: #9CA3AF;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
   }
-  
+
   .product-feature {
     background: rgba(2, 8, 22, 1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -70,13 +70,13 @@
     width: 308px;
     height: 290px;
   }
-  
+
   .product-feature h4 {
     font-size: 20px;
     font-weight: 600;
     color: #FFFFFF;
   }
-  
+
   .product-feature p {
     color: #9CA3AF;
     font-size: 16px;
@@ -84,7 +84,7 @@
     line-height: 26px;
     margin-bottom: 8px;
   }
-  
+
   .product-icons {
     width: 40px;
     height: 40px;
@@ -96,36 +96,36 @@
       padding: 30px 30px 50rem 30px;
       height: 100%;
     }
-  
+
     .product-grid {
       grid-template-columns: 1fr;
       gap: 1.5rem;
       padding: 0 1rem;
     }
-  
+
     .product-left {
       width: 100%;
     }
-  
+
     .product-right {
       display: flex;
       flex-direction: column;
       width: 100%;
       gap: 1.5rem;
     }
-  
+
     .product-title {
       font-size: 26px;
       line-height: 32px;
       margin-bottom: 12px;
     }
-  
+
     .product-description {
       font-size: 14px;
       line-height: 22px;
       margin-bottom: 12px;
     }
-  
+
     .product-feature {
       width: 100%;
       height: auto;

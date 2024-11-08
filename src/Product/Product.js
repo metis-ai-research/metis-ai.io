@@ -3,8 +3,8 @@ import "./Product.css";
 
 const Product = () => {
   return (
-    <div className="product-container">
-      <div className="product-grid">
+    <div className="product-container pt-24 pb-24">
+      <div className="product-content">
         <div className="product-left">
           <div className="product-badge">Our Product</div>
           <h2 className="product-title">

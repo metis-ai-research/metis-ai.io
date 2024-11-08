@@ -1,10 +1,16 @@
 .header {
   background-color: #020816;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 64px;
-  padding: 0 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1014px;
 }
 
 .header-logo {
@@ -13,13 +19,13 @@
 }
 
 .logo-image {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.5rem;
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
 }
 
 .logo-text {
-  font-size: 1.25rem;
+  font-size: 19px;
   font-weight: bold;
   color: #FFFFFF;
 }
@@ -31,18 +37,4 @@
 
 .nav-link:hover {
   color: #FFFFFF;
-}
-
-/* Responsive Styles */
-@media (min-width: 768px) {
-  .header {
-      padding: 0 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header {
-      padding-left: 270px;
-      padding-right: 200px;
-  }
 }
