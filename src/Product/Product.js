@@ -4,14 +4,12 @@ import "./Product.css";
 
 const Product = () => {
   return (
-    <div className="product-container pt-24 pb-24">
+    <div className="product-container">
       <div className="product-content">
         <div className="product-left">
           <Badge label="Our Product" />
           <h2 className="product-title">
-            Transform <br />
-            Your Ideas into <br />
-            Reality
+            Transform Your Ideas into Reality
           </h2>
           <p className="product-description">
             At Metis AI Solutions, our product is the result of cutting-edge

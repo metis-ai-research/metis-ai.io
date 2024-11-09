@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 64px;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .header-content {
@@ -36,4 +38,18 @@
 
 .nav-link:hover {
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }

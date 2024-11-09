@@ -6,13 +6,15 @@
     background-size: cover;
     padding-top: 93px;
     padding-bottom: 85px;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .vision-content {
     width: 1014px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
 
@@ -29,7 +31,7 @@
 
   .vision-text {
     flex-basis: 50%;
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -68,9 +70,29 @@
     font-weight: 400;
   }
 
+  @media (max-width: 1200px) {
+    .vision-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+  }
+
   @media (max-width: 768px) {
+    .vision-container {
+      padding-top: 16px;
+      padding-bottom: 48px;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
     .vision-content {
       padding: 0 1rem;
+      flex-direction: column;
+    }
+
+    .vision-text {
+      text-align: center;
     }
 
     .vision-title {
@@ -87,30 +109,5 @@
       width: 100%;
       height: auto;
       margin-top: 10px;
-    }
-  }
-
-  @media (max-width: 375px) {
-    .vision-container {
-      padding-bottom: 10rem;
-    }
-  }
-
-  @media (max-width: 360px) {
-    .vision-container {
-      padding-bottom: 10rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .vision-content {
-      flex-direction: row;
-    }
-  }
-
-
-  @media (min-width: 768px) {
-    .vision-text {
-      text-align: left;
     }
   }

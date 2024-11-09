@@ -3,7 +3,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header pr-20 pl-20">
+    <header className="header">
       <div className="header-content">
         {/* Company Logo */}
         <div className="header-logo">
