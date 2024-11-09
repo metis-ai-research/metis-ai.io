@@ -1,15 +1,19 @@
 .footer-container {
-    background: radial-gradient(50% 100% at 50% 137.5%, #02303A 0%, rgba(0, 40, 60, 0.8) 23.91%, #020816 100%);
+  padding-top: 95px;
+  padding-bottom: 22px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background: radial-gradient(50% 100% at 50% 137.5%, #02303A 0%, rgba(0, 40, 60, 0.8) 23.91%, #020816 100%);
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    width: 1014px;
     margin: 0 auto;
     gap: 40px;
-    padding-bottom: 1rem;
+    padding-bottom: 22px;
 }
 
 .footer-logo {
@@ -62,7 +66,7 @@
     font-weight: 500;
     line-height: 20px;
     color: rgba(255, 255, 255, 1);
-    padding-top: 1rem;
+    padding-top: 16px;
 }
 
 .footer-logo-image {
@@ -70,8 +74,21 @@
     height: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .footer-container {
-        padding: 15px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
+
+    .footer-content {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
+}

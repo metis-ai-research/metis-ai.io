@@ -38,7 +38,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-copyright">
-        ©2024 Metis AI. All rights reserved.
+        ©2024 Metis AI Research Inc. All rights reserved.
       </div>
     </footer>
   );

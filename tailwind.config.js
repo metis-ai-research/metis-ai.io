@@ -11,6 +11,9 @@ module.exports = {
       animation: {
         float: "float 3s ease-in-out infinite",
       },
+      fontFamily: {
+        sans: ['Inter'],
+      },
     },
   },
   plugins: [],

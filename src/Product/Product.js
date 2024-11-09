@@ -1,16 +1,15 @@
 import React from "react";
+import Badge from "../Badge/Badge";
 import "./Product.css";
 
 const Product = () => {
   return (
     <div className="product-container">
-      <div className="product-grid">
+      <div className="product-content">
         <div className="product-left">
-          <div className="product-badge">Our Product</div>
+          <Badge label="Our Product" />
           <h2 className="product-title">
-            Transform <br />
-            Your Ideas into <br />
-            Reality
+            Transform Your Ideas into Reality
           </h2>
           <p className="product-description">
             At Metis AI Solutions, our product is the result of cutting-edge

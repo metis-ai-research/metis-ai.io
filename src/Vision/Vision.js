@@ -1,4 +1,5 @@
 import React from "react";
+import Badge from "../Badge/Badge";
 import "./Vision.css";
 
 const Vision = () => {
@@ -12,7 +13,7 @@ const Vision = () => {
 
         {/* Right Section: Text */}
         <div className="vision-text">
-          <div className="vision-badge">Our Vision</div>
+          <Badge label="Our Vision" />
           <h1 className="vision-title">Enhancing Everyday Life Through AI</h1>
           <p className="vision-description">
             Our vision is to revolutionize how people live and work by
