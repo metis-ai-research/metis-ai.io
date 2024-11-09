@@ -76,8 +76,8 @@
 
 @media (max-width: 1200px) {
     .footer-container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .footer-content {
