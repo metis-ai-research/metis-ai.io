@@ -17,7 +17,7 @@ const Footer = () => {
           <h4 className="footer-section-title">Quick Links</h4>
           <ul className="footer-links">
             <li>
-              <a href="#arotaro">arotaro</a>
+              <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer">arotaro</a>
             </li>
           </ul>
         </div>
@@ -27,10 +27,10 @@ const Footer = () => {
           <h4 className="footer-section-title">Company</h4>
           <ul className="footer-links">
             <li>
-              <a href="#team">Our team</a>
+              <a href="#team" target="_blank" rel="noopener noreferrer">Our team</a>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <a href="mailto:info@metis-ai.io">Contact Us</a>
             </li>
           </ul>
         </div>

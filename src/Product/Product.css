@@ -5,8 +5,8 @@
     background-color: #020816;
     padding-top: 95px;
     padding-bottom: 95px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .product-content {
@@ -99,7 +99,7 @@
 
   @media (max-width: 1200px) {
     .product-container {
-      padding: 95px 16px;
+      padding: 95px 48px;
       height: auto;
     }
 
@@ -141,7 +141,7 @@
 
   @media (max-width: 768px) {
     .product-container {
-      padding: 32px 48px;
+      padding: 32px 16px;
       height: auto;
     }
 
@@ -157,6 +157,10 @@
 
   @media (max-width: 720px) {
     .product-content {
+      width: auto;
+    }
+
+    .product-title {
       width: auto;
     }
 

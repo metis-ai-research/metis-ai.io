@@ -22,7 +22,12 @@ const Services = () => {
           </p>
 
           {/* Contact Us Button */}
-          <button className="contact-button">Contact Us</button>
+          <button
+            className="contact-button"
+            onClick={() => window.location.href = 'mailto:info@metis-ai.io'}
+          >
+            Contact Us
+          </button>
         </div>
 
         {/* Right Section: Image */}
