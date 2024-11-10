@@ -1,8 +1,8 @@
 .footer-container {
   padding-top: 95px;
   padding-bottom: 22px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 80px;
+  padding-right: 80px;
   background: radial-gradient(50% 100% at 50% 137.5%, #02303A 0%, rgba(0, 40, 60, 0.8) 23.91%, #020816 100%);
 }
 
@@ -76,8 +76,8 @@
 
 @media (max-width: 1200px) {
     .footer-container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 48px;
+        padding-right: 48px;
     }
 
     .footer-content {
@@ -88,7 +88,7 @@
 
 @media (max-width: 768px) {
   .footer-container {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

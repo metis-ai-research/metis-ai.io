@@ -1,8 +1,8 @@
 .solution-container {
     padding-top: 95px;
     padding-bottom: 58px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 80px;
+    padding-right: 80px;
     background: radial-gradient(65% 100% at 0% 0%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
   }
 
@@ -86,8 +86,8 @@
     .solution-container {
       padding-top: 95px;
       padding-bottom: 58px;
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding-left: 48px;
+      padding-right: 48px;
     }
 
     .solution-content {
@@ -143,6 +143,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .solution-container {
+      padding-left: 16px;
+      padding-right: 16px;
     }
 
     .solution-description {
