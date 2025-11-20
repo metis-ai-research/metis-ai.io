@@ -11,14 +11,11 @@ const Solution = () => {
         {/* Title */}
         <h3 className="solution-badge">{t('solution.badge')}</h3>
         <h2 className="solution-title">{t('solution.title')}</h2>
-        <p className="solution-description">
-          {t('solution.description').split('\n').map((line, index) => (
-            <React.Fragment key={index}>
-              {line}
-              {index < t('solution.description').split('\n').length - 1 && <br />}
-            </React.Fragment>
-          ))}
-        </p>
+        <p className="solution-description"
+           dangerouslySetInnerHTML={{
+             __html: t('solution.description').replace(/\n/g, '<br />')
+           }}
+        />
 
         {/* Features */}
         <div className="solution-features">

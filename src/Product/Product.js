@@ -10,14 +10,11 @@ const Product = () => {
       <div className="product-grid">
         <div className="product-left">
           <div className="product-badge">{t('product.badge')}</div>
-          <h2 className="product-title">
-            {t('product.title').split('\n').map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                {index < t('product.title').split('\n').length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </h2>
+          <h2 className="product-title"
+              dangerouslySetInnerHTML={{
+                __html: t('product.title').replace(/\n/g, '<br />')
+              }}
+          />
           <p className="product-description">
             {t('product.description')}
           </p>
