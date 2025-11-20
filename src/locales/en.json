@@ -1,0 +1,84 @@
+{
+  "header": {
+    "logoText": "metis ai",
+    "logoAlt": "Metis AI Logo",
+    "contactUs": "Contact Us"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "The Future of AI-Powered Personal Assistance.",
+    "description": "Our innovative solutions, powered by advanced AI, are here to enhance your everyday life. The launch of our new AI companion app is just the beginning!",
+    "contactButton": "Contact Us",
+    "imageAlt": "AI Assistance"
+  },
+  "vision": {
+    "badge": "Our Vision",
+    "title": "Enhancing Everyday Life Through AI",
+    "description1": "Our vision is to revolutionize how people live and work by delivering innovative, AI-powered solutions. Whether it's personalized learning, intelligent assistants, or advanced tools that simplify complex tasks, we focus on creating seamless experiences that elevate daily interactions.",
+    "description2": "At Metis AI, we believe in the transformative potential of AI to positively impact every aspect of life.",
+    "imageAlt": "Robot"
+  },
+  "product": {
+    "badge": "Our Product",
+    "title": "Transform\nYour Ideas into\nReality",
+    "description": "At Metis AI Solutions, our product is the result of cutting-edge technology, thoughtful design, and years of expertise. Here's what makes it unique:",
+    "features": {
+      "ai": {
+        "title": "Powered by Advanced AI",
+        "description": "We integrate state-of-the-art AI technology to deliver smarter, faster, and more efficient solutions designed for modern users.",
+        "alt": "Powered by Advanced AI"
+      },
+      "design": {
+        "title": "Designed for Users",
+        "description": "User experience is our top priority. Our products are thoughtfully crafted with a deep understanding of user behavior, providing intuitive experiences.",
+        "alt": "Designed for Users"
+      },
+      "experience": {
+        "title": "Highly Experienced",
+        "description": "We excel at turning complex ideas into user-friendly products, leveraging industry-leading expertise in every solution.",
+        "alt": "Highly Experienced"
+      },
+      "team": {
+        "title": "Diverse Team",
+        "description": "Our global team brings together varied perspectives and expertise, helping us innovate and design products that cater to diverse audiences worldwide.",
+        "alt": "Diverse Team"
+      }
+    }
+  },
+  "solution": {
+    "badge": "Why Choose Metis AI",
+    "title": "Your Ultimate AI Solution",
+    "description": "At Metis AI Solutions, we are more than just a technology company — we are\na partner in innovation. Here's why you should trust us with your next project:",
+    "features": {
+      "innovation": {
+        "title": "AI-Driven Innovation",
+        "description": "Our cutting-edge AI adapts to your needs, delivering solutions that grow with you, helping you meet today's goals, and keeping you ready for tomorrow's challenges."
+      },
+      "personalized": {
+        "title": "Personalized Solutions",
+        "description": "Every product we create is customized to meet your unique requirements—whether for education, productivity, or well-being— ensuring tailored experiences that work for you."
+      },
+      "microsoft": {
+        "title": "Microsoft-Supported",
+        "description": "As part of the Microsoft for Startups Founders Hub, we have access to world-class technology and resources, empowering us to build with excellence."
+      }
+    }
+  },
+  "footer": {
+    "logoAlt": "Metis AI logo",
+    "quickLinks": {
+      "title": "Quick Links",
+      "arotaro": "arotaro"
+    },
+    "company": {
+      "title": "Company",
+      "team": "Our team",
+      "contact": "Contact Us"
+    },
+    "copyright": "©2025 Metis AI. All rights reserved.",
+    "language": {
+      "english": "English",
+      "japanese": "日本語"
+    }
+  }
+}

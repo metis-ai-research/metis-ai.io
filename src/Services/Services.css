@@ -13,12 +13,32 @@
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    padding: 0 2rem;
+    width: 100%;
   }
-  
+
+  /* Small screens - mobile first */
+  @media (min-width: 640px) {
+    .services-content {
+      padding: 0 3rem;
+    }
+  }
+
   @media (min-width: 768px) {
     .services-content {
       flex-direction: row;
       gap: 2.5rem;
+      padding: 0 4rem;
+    }
+
+    .services-content > div {
+      flex: 1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services-content {
+      padding: 0 2rem;
     }
   }
 

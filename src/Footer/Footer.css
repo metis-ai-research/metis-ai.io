@@ -56,6 +56,39 @@
     color: #FFFFFF;
 }
 
+.language-picker {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.language-link {
+    background: none;
+    border: none;
+    color: rgba(174, 174, 184, 1);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.language-link:hover {
+    color: #FFFFFF;
+}
+
+.language-link.active {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.language-separator {
+    color: rgba(174, 174, 184, 1);
+    font-size: 14px;
+    margin: 0 8px;
+}
+
 .footer-copyright {
     text-align: center;
     font-size: 14px;

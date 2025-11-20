@@ -1,72 +1,70 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Product.css";
 
 const Product = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="product-container">
       <div className="product-grid">
         <div className="product-left">
-          <div className="product-badge">Our Product</div>
+          <div className="product-badge">{t('product.badge')}</div>
           <h2 className="product-title">
-            Transform <br />
-            Your Ideas into <br />
-            Reality
+            {t('product.title').split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index < t('product.title').split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
           </h2>
           <p className="product-description">
-            At Metis AI Solutions, our product is the result of cutting-edge
-            technology, thoughtful design, and years of expertise. Here’s what
-            makes it unique:
+            {t('product.description')}
           </p>
         </div>
         <div className="product-right">
           <div className="product-feature">
             <img
               src="images/rocket.svg"
-              alt="Powered by Advanced AI"
+              alt={t('product.features.ai.alt')}
               className="product-icons"
             />
-            <h4>Powered by Advanced AI</h4>
+            <h4>{t('product.features.ai.title')}</h4>
             <p>
-              We integrate state-of-the-art AI technology to deliver smarter,
-              faster, and more efficient solutions designed for modern users.
+              {t('product.features.ai.description')}
             </p>
           </div>
           <div className="product-feature">
             <img
               src="images/design.svg"
-              alt="Designed for Users"
+              alt={t('product.features.design.alt')}
               className="product-icons"
             />
-            <h4>Designed for Users</h4>
+            <h4>{t('product.features.design.title')}</h4>
             <p>
-              User experience is our top priority. Our products are thoughtfully
-              crafted with a deep understanding of user behavior, providing
-              intuitive experiences.
+              {t('product.features.design.description')}
             </p>
           </div>
           <div className="product-feature">
             <img
               src="images/experience.svg"
-              alt="Highly Experienced"
+              alt={t('product.features.experience.alt')}
               className="product-icons"
             />
-            <h4>Highly Experienced</h4>
+            <h4>{t('product.features.experience.title')}</h4>
             <p>
-              We excel at turning complex ideas into user-friendly products,
-              leveraging industry-leading expertise in every solution.
+              {t('product.features.experience.description')}
             </p>
           </div>
           <div className="product-feature">
             <img
               src="images/diverse.svg"
-              alt="Diverse Team"
+              alt={t('product.features.team.alt')}
               className="product-icons"
             />
-            <h4>Diverse Team</h4>
+            <h4>{t('product.features.team.title')}</h4>
             <p>
-              Our global team brings together varied perspectives and expertise,
-              helping us innovate and design products that cater to diverse
-              audiences worldwide.
+              {t('product.features.team.description')}
             </p>
           </div>
         </div>
