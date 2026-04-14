@@ -1,156 +1,167 @@
 .solution-container {
-    padding-top: 95px;
-    padding-bottom: 58px;
-    padding-left: 80px;
-    padding-right: 80px;
-    background: radial-gradient(65% 100% at 0% 0%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: radial-gradient(65% 100% at 0% 0%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
+}
+
+.solution-content {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1014px;
+}
+
+.solution-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.solution-description {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 55px;
+  max-width: 600px;
+}
+
+.solution-features {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+}
+
+/* Base card style */
+.solution-feature {
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  width: 322px;
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent top-border per card */
+.solution-feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 16px 16px 0 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.solution-feature--teal::before {
+  background: linear-gradient(90deg, transparent, var(--color-teal), transparent);
+}
+.solution-feature--blue::before {
+  background: linear-gradient(90deg, transparent, var(--color-blue-cta-start), transparent);
+}
+.solution-feature--violet::before {
+  background: linear-gradient(90deg, transparent, var(--color-violet), transparent);
+}
+
+.solution-feature:hover {
+  transform: translateY(-6px);
+  border-color: var(--glass-border-hover);
+}
+
+.solution-feature--teal:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(85, 225, 221, 0.08);
+}
+.solution-feature--blue:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(2, 91, 207, 0.08);
+}
+.solution-feature--violet:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(124, 58, 237, 0.08);
+}
+
+.solution-feature:hover::before {
+  height: 3px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+.feature-description {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .solution-container {
+    padding: 80px 48px;
   }
 
   .solution-content {
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 1014px;
+    width: auto;
   }
 
-  .solution-badge {
-    display: inline-flex;
-    align-items: center;
+  .solution-features {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    border-radius: 84px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 8px 16px;
-    width: auto;
-    height: 30px;
-    white-space: nowrap;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(229, 229, 232, 0.1) 100%);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 24px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .solution-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 
   .solution-title {
-    font-size: 40px;
-    line-height: 56px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 18px;
+    font-size: 28px;
   }
 
-  .solution-description {
-    font-size: 16px;
-    color: rgba(174, 174, 184, 1);
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 55px;
+  .solution-feature {
+    padding: 32px;
+    width: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .solution-container {
+    padding: 48px 16px;
   }
 
   .solution-features {
     display: flex;
-    gap: 24px;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
   }
-
 
   .solution-feature {
-    padding: 2.5rem;
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(2, 91, 207, 0.4) 0%, rgba(0, 145, 189, 0.4) 100%);
-    width: 322px;
-    height: 276px;
-    display: flex;
-    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
   }
 
-  .feature-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 12px;
+  .solution-description {
+    font-size: 14px;
   }
-
-  .feature-description {
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-  }
-
-  @media (max-width: 1200px) {
-    .solution-container {
-      padding-top: 95px;
-      padding-bottom: 58px;
-      padding-left: 48px;
-      padding-right: 48px;
-    }
-
-    .solution-content {
-      width: auto;
-    }
-
-    .solution-features {
-      flex-direction: row;
-      gap: 16px;
-    }
-  }
-
-  @media (max-width: 1080px) {
-    .solution-container {
-      padding-top: 32px;
-      padding-bottom: 16px;
-    }
-    .solution-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 32px;
-    }
-
-    .solution-title {
-      font-size: 26px;
-    }
-
-    .solution-feature {
-      padding: 32px;
-      width: 308px;
-      height: 308px;
-    }
-
-    .solution-feature:nth-child(1) {
-      grid-column: 1 / 2;
-      grid-row: 1;
-    }
-
-    .solution-feature:nth-child(2) {
-      grid-column: 2 / 3;
-      grid-row: 1;
-    }
-
-    .solution-feature:nth-child(3) {
-      grid-column: 1 / 2;
-      grid-row: 2;
-    }
-  }
-
-  @media (max-width: 720px) {
-    .solution-features {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .solution-container {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-
-    .solution-description {
-      font-size: 14px;
-    }
-  }
+}

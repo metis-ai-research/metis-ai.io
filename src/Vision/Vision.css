@@ -1,114 +1,125 @@
 .vision-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(66% 79% at 0% 100%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
-    background-size: cover;
-    padding-top: 93px;
-    padding-bottom: 85px;
-    padding-left: 80px;
-    padding-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(66% 79% at 0% 100%, #55E1DD 0%, #00649E 23.91%, #020816 100%);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.vision-content {
+  width: 1014px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
+.vision-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-image-glow {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(85, 225, 221, 0.25) 0%, rgba(0, 100, 158, 0.1) 50%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.vision-image {
+  width: 480px;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-text {
+  flex: 1;
+  text-align: left;
+}
+
+.vision-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-glass-card:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 0 60px rgba(85, 225, 221, 0.08);
+}
+
+.vision-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.vision-description {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.vision-description:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .vision-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-container {
+    padding: 48px 16px;
   }
 
   .vision-content {
-    width: 1014px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-  }
-
-
-  .vision-images {
-
-  }
-
-  .vision-image {
-    width: 535px;
-    left: -50px;
-    top: -14px;
-    position: relative;
+    flex-direction: column-reverse;
+    gap: 24px;
   }
 
   .vision-text {
-    flex-basis: 50%;
-    text-align: left;
+    text-align: center;
   }
 
-
-  .vision-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 84px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 8px 16px;
-    width: auto;
-    height: 36px;
-    white-space: nowrap;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(229, 229, 232, 0.1) 100%);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.06);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 24px;
+  .vision-glass-card {
+    padding: 24px;
   }
 
   .vision-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffffff;
-    line-height: 48px;
+    font-size: 26px;
+    line-height: 1.25;
   }
 
   .vision-description {
-    font-size: 16px;
-    color: #9ca3af;
-    margin-bottom: 1.5rem;
-    line-height: 26px;
-    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
-  @media (max-width: 1200px) {
-    .vision-container {
-      padding-left: 48px;
-      padding-right: 48px;
-    }
-
+  .vision-image {
+    width: 100%;
+    height: auto;
   }
-
-  @media (max-width: 768px) {
-    .vision-container {
-      padding-top: 16px;
-      padding-bottom: 48px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-
-    .vision-content {
-      flex-direction: column-reverse;
-    }
-
-    .vision-text {
-      text-align: center;
-    }
-
-    .vision-title {
-      font-size: 26px;
-      line-height: 36px;
-    }
-
-    .vision-description {
-      font-size: 14px;
-      line-height: 22px;
-    }
-
-    .vision-image {
-      width: 100%;
-      height: auto;
-      margin-top: 10px;
-      left: unset;
-      top: unset;
-    }
-  }
+}

@@ -36,9 +36,12 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Gradient Divider */}
+      <div className="footer-divider"></div>
+
       {/* Copyright */}
       <div className="footer-copyright">
-        ©2024 Metis AI Research Inc. All rights reserved.
+        &copy;2024 Metis AI Research Inc. All rights reserved.
       </div>
     </footer>
   );
