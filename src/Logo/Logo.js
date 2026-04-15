@@ -7,7 +7,7 @@ const Logo = ({ variant = "dark", width = 118, height = 35, markOnly = false }) 
 
   if (markOnly) {
     return (
-      <svg width={width} height={height} viewBox="0 0 22 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width={width} height={height} viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4.97175" y="11.6322" width="5.8491" height="17.5473" rx="2.92455" transform="rotate(-25 4.97175 11.6322)" fill="url(#metis-m-a)" />
         <rect width="5.8491" height="17.5473" rx="2.92455" transform="matrix(-0.906308 -0.422618 -0.422618 0.906308 12.7169 11.6322)" fill="url(#metis-m-b)" />
         <rect x="12.2831" y="11.4722" width="5.8491" height="17.5473" rx="2.92455" transform="rotate(-25 12.2831 11.4722)" fill="url(#metis-m-c)" />
