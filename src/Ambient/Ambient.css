@@ -1,0 +1,51 @@
+.ambient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ambient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.ambient-blob--1 {
+  width: 700px;
+  height: 700px;
+  top: -15%;
+  left: -10%;
+  background: radial-gradient(circle, #1A3EF3 0%, transparent 65%);
+  opacity: 0.45;
+}
+
+.ambient-blob--2 {
+  width: 650px;
+  height: 650px;
+  top: 20%;
+  right: -10%;
+  background: radial-gradient(circle, #0B1957 0%, transparent 65%);
+  opacity: 0.7;
+}
+
+.ambient-blob--3 {
+  width: 500px;
+  height: 500px;
+  top: 70%;
+  left: 30%;
+  background: radial-gradient(circle, #438DF1 0%, transparent 65%);
+  opacity: 0.22;
+}
+
+.ambient-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(120, 144, 220, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 144, 220, 0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, black 0%, black 30%, transparent 90%);
+  -webkit-mask-image: linear-gradient(180deg, black 0%, black 30%, transparent 90%);
+}

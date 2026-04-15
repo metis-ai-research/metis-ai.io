@@ -1,47 +1,26 @@
 import React from "react";
+import Logo from "../Logo/Logo";
 import "./Footer.css";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        {/* Company Logo */}
-        <div className="footer-logo">
-          <span className="footer-logo-image">
-            <img src="images/logo.png" alt="Metis AI logo" />
-          </span>
+    <footer className="footer">
+      <div className="container footer-row">
+        <a href="#top" className="footer-mark" aria-label="Metis">
+          <Logo variant="dark" markOnly width={22} height={35} />
+        </a>
+
+        <div className="footer-links">
+          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="link-underline">arotaro</a>
+          <a href="#team" className="link-underline">team</a>
+          <a href="mailto:info@metis-ai.io" className="link-underline">contact</a>
         </div>
 
-        {/* Quick Links */}
-        <div className="footer-section">
-          <h4 className="footer-section-title">Quick Links</h4>
-          <ul className="footer-links">
-            <li>
-              <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer">arotaro</a>
-            </li>
-          </ul>
+        <div className="mono footer-meta">
+          Vancouver, BC &middot; &copy; {year}
         </div>
-
-        {/* Company Section */}
-        <div className="footer-section">
-          <h4 className="footer-section-title">Company</h4>
-          <ul className="footer-links">
-            <li>
-              <a href="#team" target="_blank" rel="noopener noreferrer">Our team</a>
-            </li>
-            <li>
-              <a href="mailto:info@metis-ai.io">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Gradient Divider */}
-      <div className="footer-divider"></div>
-
-      {/* Copyright */}
-      <div className="footer-copyright">
-        &copy;2024 Metis AI Research Inc. All rights reserved.
       </div>
     </footer>
   );

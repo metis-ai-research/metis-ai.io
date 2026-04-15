@@ -1,0 +1,75 @@
+.who {
+  padding: 140px 0;
+  border-top: 1px solid var(--hairline);
+  position: relative;
+  z-index: 1;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.who-left {
+  position: sticky;
+  top: 120px;
+}
+
+.who-eyebrow {
+  margin-bottom: 32px;
+}
+
+.who-quote {
+  font-size: clamp(36px, 4.8vw, 64px);
+  line-height: 1.05;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.who-right {
+  padding-top: 12px;
+}
+
+.who-body {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--mist);
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+.who-body:last-of-type {
+  margin-bottom: 48px;
+}
+
+.who-signature {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--hairline);
+}
+
+.who-sig-label {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--mist);
+}
+
+.who-sig-names {
+  font-size: 28px;
+  color: var(--text);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .who { padding: 80px 0; }
+  .who-grid { grid-template-columns: 1fr; gap: 40px; }
+  .who-left { position: static; }
+  .who-quote { font-size: 32px; }
+  .who-body { font-size: 16px; }
+  .who-sig-names { font-size: 22px; }
+}
