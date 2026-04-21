@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "../Logo/Logo";
 import "./Footer.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -13,13 +15,13 @@ const Footer = () => {
         </a>
 
         <div className="footer-links">
-          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="link-underline">arotaro</a>
-          <a href="#team" className="link-underline">team</a>
-          <a href="mailto:info@metis-ai.io" className="link-underline">contact</a>
+          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="link-underline">{t("footer.links.arotaro")}</a>
+          <a href="#team" className="link-underline">{t("footer.links.team")}</a>
+          <a href="mailto:info@metis-ai.io" className="link-underline">{t("footer.links.contact")}</a>
         </div>
 
         <div className="mono footer-meta">
-          Vancouver, BC &middot; &copy; {year}
+          {t("footer.metaLocation")} &middot; &copy; {year}
         </div>
       </div>
     </footer>

@@ -1,0 +1,116 @@
+{
+  "languageSwitcher": {
+    "label": "Language",
+    "english": "EN",
+    "japanese": "日本語"
+  },
+  "nav": {
+    "product": "Product",
+    "vision": "Vision",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "VANCOUVER · AI RESEARCH",
+    "title": {
+      "line1": "Intelligence,",
+      "line2Pre": "",
+      "line2Em": "quietly delivered",
+      "line2Post": " to",
+      "line3": "everyday life."
+    },
+    "sub": "A Vancouver-based AI research studio building products that make ordinary moments better.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "See arotaro — our first product"
+  },
+  "who": {
+    "eyebrow": "01 — Who we are",
+    "quotePre": "We believe AI’s highest purpose is",
+    "quoteEm": " making ordinary moments better",
+    "quotePost": ".",
+    "body1": "Metis AI Research was founded in Vancouver on the belief that the AI era demands companies that build with care. Our mission is to revolutionize how people live and work through innovative, AI-powered solutions.",
+    "body2": "Whether it’s personalized learning, intelligent assistants, or tools that simplify complex tasks, we focus on creating seamless experiences that elevate daily interactions — and stay out of the way when they should.",
+    "body3": "We believe in the transformative potential of AI to positively impact every aspect of life, and we’re building quietly toward that future.",
+    "signedLabel": "SIGNED",
+    "signedName": "The Metis team"
+  },
+  "productMarquee": {
+    "eyebrow": "02 — What we’re building",
+    "tagline": "A mental wellness companion — tarot, astrology, and fortune telling in a safe space to talk through whatever’s on your mind. Counselling at your fingertips, 24/7.",
+    "metaWellness": "MENTAL WELLNESS",
+    "metaTarot": "TAROT · ASTROLOGY",
+    "metaAlways": "24/7",
+    "linkLabel": "Visit arotaro.ai",
+    "mockLabel": "arotaro · live",
+    "mockUser1": "I’ve been feeling stuck lately. Can you pull a card?",
+    "mockAi1": "Of course. Take a breath — I drew The Star for you. It’s a sign of quiet hope after a hard stretch. What feels heaviest right now?",
+    "mockUser2": "Work. I can’t tell if I’m burnt out or just lost."
+  },
+  "manifesto": {
+    "eyebrow": "03 — How we think",
+    "principles": [
+      {
+        "n": "01",
+        "title": "AI should feel inevitable, not impressive.",
+        "body": "The best technology disappears. We don’t build demos for the AI era — we build products that feel obvious in hindsight, the kind you can’t imagine living without a month after using them."
+      },
+      {
+        "n": "02",
+        "title": "Personalization is a craft, not a feature.",
+        "body": "Every product we create is shaped to your actual life — whether for learning, productivity, or wellbeing. Generic AI is loud; personal AI is quiet and precise. We choose precision."
+      },
+      {
+        "n": "03",
+        "title": "Small teams with strong taste outperform big teams with big budgets.",
+        "body": "We are a small team, supported by Microsoft for Startups Founders Hub, building with focus and conviction. The future belongs to teams that care about details other people skip."
+      }
+    ]
+  },
+  "founders": {
+    "eyebrow": "04 — The team",
+    "titleLine1": "A small studio from Vancouver,",
+    "titleLine2Em": "building the future quietly.",
+    "members": [
+      {
+        "initial": "S",
+        "name": "Sarah",
+        "role": "Design · Co-founder",
+        "bio": "Experienced designer, formerly at Microsoft, with years of craft building UX that feels effortless."
+      },
+      {
+        "initial": "R",
+        "name": "Riku",
+        "role": "Engineering · Co-founder",
+        "bio": "Ex-Microsoft engineer who lives on the web stack and builds what’s best for the people on the other side of the screen."
+      },
+      {
+        "initial": "J",
+        "name": "Jason",
+        "role": "Quality · Co-founder",
+        "bio": "SET veteran from GitLab, Broadcom, and more — the kind of engineer who makes sure things actually work."
+      }
+    ],
+    "locationLabel": "HEADQUARTERED",
+    "locationValue": "Vancouver, British Columbia"
+  },
+  "backed": {
+    "label": "BACKED & SUPPORTED BY",
+    "logoName": "Microsoft",
+    "logoSub": "for Startups Founders Hub"
+  },
+  "contact": {
+    "eyebrow": "05 — Work with us",
+    "titleLine1": "Have an idea, a partnership,",
+    "titleLine2Pre": "or just want to ",
+    "titleLine2Em": "say hi?",
+    "metaOpen": "CURRENTLY OPEN TO CONVERSATIONS"
+  },
+  "footer": {
+    "links": {
+      "arotaro": "arotaro",
+      "team": "team",
+      "contact": "contact"
+    },
+    "metaLocation": "Vancouver, BC"
+  }
+}

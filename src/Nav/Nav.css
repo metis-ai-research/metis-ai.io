@@ -74,6 +74,17 @@
   box-shadow: 0 8px 24px rgba(26, 62, 243, 0.6);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
+}
+
+@media (max-width: 480px) {
+  .nav-right { gap: 8px; }
+  .nav-inner { gap: 12px; padding: 8px 10px 8px 14px; }
 }

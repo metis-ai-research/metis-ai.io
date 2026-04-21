@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "../Logo/Logo";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import "./Nav.css";
 
 const Nav = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,14 +22,17 @@ const Nav = () => {
         </a>
 
         <div className="nav-links">
-          <a href="#product" className="nav-link">Product</a>
-          <a href="#vision" className="nav-link">Vision</a>
-          <a href="#team" className="nav-link">Team</a>
+          <a href="#product" className="nav-link">{t("nav.product")}</a>
+          <a href="#vision" className="nav-link">{t("nav.vision")}</a>
+          <a href="#team" className="nav-link">{t("nav.team")}</a>
         </div>
 
-        <a href="mailto:info@metis-ai.io" className="nav-cta">
-          Contact <span>&rarr;</span>
-        </a>
+        <div className="nav-right">
+          <LanguageSwitcher />
+          <a href="mailto:info@metis-ai.io" className="nav-cta">
+            {t("nav.contact")} <span>&rarr;</span>
+          </a>
+        </div>
       </div>
     </nav>
   );
