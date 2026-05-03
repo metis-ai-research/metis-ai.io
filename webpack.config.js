@@ -38,6 +38,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "public/images", to: "images" },
+        { from: "public/CNAME", to: "CNAME", toType: "file" },
       ],
     }),
   ],

@@ -36,4 +36,4 @@ Images live in `public/images/` and are referenced via relative paths (`images/.
 
 ## Deployment
 
-GitHub Actions workflow (`.github/workflows/deploy.yml`) builds on push to `master` and syncs `dist/` to an S3 bucket (`s3://metis-ai.io`). AWS credentials are stored as repository secrets.
+GitHub Actions workflow (`.github/workflows/deploy.yml`) deploys to GitHub Pages on push to `master`: builds the site with `npm run build`, then uploads `dist/` via `actions/upload-pages-artifact` and `actions/deploy-pages`. The custom apex domain `metis-ai.io` is pinned via `public/CNAME`, which webpack copies into `dist/CNAME` at build time. Pages is configured in repo Settings → Pages with source set to "GitHub Actions". No secrets required — uses GitHub's built-in OIDC token.
