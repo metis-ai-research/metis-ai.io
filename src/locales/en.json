@@ -71,24 +71,30 @@
     "titleLine1": "A small studio from Vancouver,",
     "titleLine2Em": "building the future quietly.",
     "members": [
-      {
-        "initial": "S",
-        "name": "Sarah",
-        "role": "Design · Co-founder",
-        "bio": "Experienced designer, formerly at Microsoft, with years of craft building UX that feels effortless."
-      },
-      {
-        "initial": "R",
-        "name": "Riku",
-        "role": "Engineering · Co-founder",
-        "bio": "Ex-Microsoft engineer who lives on the web stack and builds what’s best for the people on the other side of the screen."
-      },
-      {
-        "initial": "J",
-        "name": "Jason",
-        "role": "Quality · Co-founder",
-        "bio": "SET veteran from GitLab, Broadcom, and more — the kind of engineer who makes sure things actually work."
-      }
+        {
+            "initial": "S",
+            "name": "Sarah",
+            "role": "Design · Co-founder",
+            "bio": "Experienced designer, formerly at Microsoft, with years of craft building UX that feels effortless."
+        },
+        {
+            "initial": "R",
+            "name": "Riku",
+            "role": "Engineering · Co-founder",
+            "bio": "Ex-Microsoft engineer who lives on the web stack and builds what’s best for the people on the other side of the screen."
+        },
+        {
+            "initial": "J",
+            "name": "Jason",
+            "role": "Quality · Co-founder",
+            "bio": "SET veteran from GitLab, Broadcom, and more — the kind of engineer who makes sure things actually work."
+        },
+        {
+            "initial": "A",
+            "name": "Alice",
+            "role": "Growth & Data",
+            "bio": "Drives growth through data and experimentation — from user acquisition to product insights, turning signals into decisions that scale."
+        }
     ],
     "locationLabel": "HEADQUARTERED",
     "locationValue": "Vancouver, British Columbia"

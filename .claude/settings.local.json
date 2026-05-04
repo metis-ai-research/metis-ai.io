@@ -14,7 +14,9 @@
       "Bash(where chrome.exe)",
       "Bash(where msedge.exe)",
       "Read(//c/Program Files/Microsoft/Edge/Application/**)",
-      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)"
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "mcp__linear-server__list_issues",
+      "mcp__linear-server__list_projects"
     ]
   }
 }
