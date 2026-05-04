@@ -10,6 +10,10 @@
 @import "@fontsource/source-serif-4/400.css";
 @import "@fontsource/source-serif-4/400-italic.css";
 @import "@fontsource/source-serif-4/600.css";
+@import "@fontsource/murecho/400.css";
+@import "@fontsource/murecho/500.css";
+@import "@fontsource/murecho/600.css";
+@import "@fontsource/murecho/700.css";
 
 :root {
   --bg: #050A1C;
@@ -36,6 +40,24 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+}
+
+html[lang="ja"] body,
+html[lang="ja"] .display,
+html[lang="ja"] .hero-title,
+html[lang="ja"] .founders-location-value,
+html[lang="ja"] .contact-email {
+  font-family: "Murecho", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  letter-spacing: 0;
+}
+
+html[lang="ja"] .italic-accent,
+html[lang="ja"] .hero-title em,
+html[lang="ja"] .contact-italic,
+html[lang="ja"] .who-sig-names,
+html[lang="ja"] .founder-avatar,
+html[lang="ja"] .founders-location-value {
+  font-style: normal;
 }
 
 /* Utility classes */
