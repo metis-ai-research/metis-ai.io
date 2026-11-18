@@ -43,6 +43,44 @@
 
 .how-body:last-child { margin-bottom: 0; }
 
+.how-shot {
+  position: relative;
+  margin: 0 0 96px;
+}
+
+.how-shot-glow {
+  position: absolute;
+  inset: -8% 5%;
+  background: radial-gradient(ellipse at 50% 50%, rgba(67, 141, 241, 0.22) 0%, transparent 65%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.how-shot-frame {
+  position: relative;
+  padding: 8px;
+  border-radius: 18px;
+  background: rgba(10, 20, 50, 0.5);
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.how-shot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.how-shot-caption {
+  position: relative;
+  margin-top: 16px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--mist);
+  text-transform: uppercase;
+}
+
 .how-pillars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -84,6 +122,9 @@
   .how { padding: 80px 0; }
   .how-eyebrow { margin-bottom: 48px; }
   .how-grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 56px; }
+  .how-shot { margin-bottom: 56px; }
+  .how-shot-frame { padding: 4px; border-radius: 12px; }
+  .how-shot-frame img { border-radius: 9px; }
   .how-pillars { grid-template-columns: 1fr 1fr; }
   .how-pillar,
   .how-pillar + .how-pillar {

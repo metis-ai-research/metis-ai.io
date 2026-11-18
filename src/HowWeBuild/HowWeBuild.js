@@ -32,6 +32,20 @@ const HowWeBuild = () => {
           </div>
         </div>
 
+        <figure className="how-shot">
+          <div className="how-shot-glow" aria-hidden="true" />
+          <div className="how-shot-frame">
+            <img
+              src="images/metis-os.png"
+              alt={t("howWeBuild.shotAlt")}
+              width="1492"
+              height="897"
+              loading="lazy"
+            />
+          </div>
+          <figcaption className="mono how-shot-caption">{t("howWeBuild.shotCaption")}</figcaption>
+        </figure>
+
         <div className="how-pillars">
           {pillars.map((p) => (
             <article key={p.title} className="how-pillar">
