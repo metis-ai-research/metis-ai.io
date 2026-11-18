@@ -23,6 +23,7 @@ const Nav = () => {
 
         <div className="nav-links">
           <a href="#product" className="nav-link">{t("nav.product")}</a>
+          <a href="#how" className="nav-link">{t("nav.how")}</a>
           <a href="#vision" className="nav-link">{t("nav.vision")}</a>
           <a href="#team" className="nav-link">{t("nav.team")}</a>
         </div>

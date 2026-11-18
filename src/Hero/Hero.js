@@ -27,7 +27,7 @@ const Hero = () => {
           <a href="mailto:info@metis-ai.io" className="hero-cta-primary">
             {t("hero.ctaPrimary")} <span>&rarr;</span>
           </a>
-          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="hero-cta-secondary link-underline">
+          <a href="#product" className="hero-cta-secondary link-underline">
             {t("hero.ctaSecondary")} &rarr;
           </a>
         </div>

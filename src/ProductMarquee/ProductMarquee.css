@@ -179,10 +179,133 @@
   30% { transform: translateY(-4px); opacity: 1; }
 }
 
+/* ---- product list ---- */
+
+.pm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+}
+
+/* Alternate sides so two showcases don't read as one repeated block. */
+.pm-stage--reverse .pm-text { order: 2; }
+.pm-stage--reverse .pm-visual { order: 1; }
+
+.pm-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.pm-link--quiet {
+  color: var(--mist);
+  font-size: 14px;
+}
+
+/* ---- Blinc mock ---- */
+
+.pm-mock-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+}
+
+.blinc-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #102C4F 0%, #13288F 100%);
+  border: 1px solid var(--hairline-strong);
+  margin-bottom: 16px;
+  animation: fadeUp 0.6s ease-out both;
+}
+
+.blinc-card-mark {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3B95F;
+  color: #102C4F;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.blinc-card-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.blinc-card-sub {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--blue-mist);
+  margin-top: 2px;
+}
+
+.blinc-barcode {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 22px 22px 14px;
+  animation: fadeUp 0.6s ease-out 0.15s both;
+}
+
+.blinc-bars {
+  display: flex;
+  height: 88px;
+}
+
+.blinc-bars span {
+  flex-basis: 0;
+  background: #0A0B10;
+}
+
+.blinc-digits {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.24em;
+  color: #0A0B10;
+  margin-top: 10px;
+}
+
+.blinc-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: rgba(67, 141, 241, 0.08);
+  border: 1px solid rgba(67, 141, 241, 0.25);
+  animation: fadeUp 0.6s ease-out 0.3s both;
+}
+
+.blinc-stat-num {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue-soft);
+  letter-spacing: -0.02em;
+}
+
+.blinc-stat-sub {
+  font-size: 13px;
+  color: var(--mist);
+}
+
 @media (max-width: 900px) {
   .product-marquee { padding: 80px 0; }
   .pm-eyebrow { margin-bottom: 48px; }
+  .pm-list { gap: 96px; }
   .pm-stage { grid-template-columns: 1fr; gap: 48px; }
+  .pm-stage--reverse .pm-text { order: 1; }
+  .pm-stage--reverse .pm-visual { order: 2; }
   .pm-name { font-size: 72px; }
   .pm-tagline { font-size: 16px; }
 }
