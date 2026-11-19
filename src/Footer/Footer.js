@@ -16,6 +16,7 @@ const Footer = () => {
 
         <div className="footer-links">
           <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="link-underline">{t("footer.links.arotaro")}</a>
+          <a href="https://blinc.metis-ai.io" target="_blank" rel="noopener noreferrer" className="link-underline">{t("footer.links.blinc")}</a>
           <a href="#team" className="link-underline">{t("footer.links.team")}</a>
           <a href="mailto:info@metis-ai.io" className="link-underline">{t("footer.links.contact")}</a>
         </div>

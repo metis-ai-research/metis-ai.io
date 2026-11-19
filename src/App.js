@@ -4,6 +4,7 @@ import Nav from "./Nav/Nav";
 import Hero from "./Hero/Hero";
 import WhoWeAre from "./WhoWeAre/WhoWeAre";
 import ProductMarquee from "./ProductMarquee/ProductMarquee";
+import HowWeBuild from "./HowWeBuild/HowWeBuild";
 import Manifesto from "./Manifesto/Manifesto";
 import Founders from "./Founders/Founders";
 import BackedBy from "./BackedBy/BackedBy";
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <WhoWeAre />
       <ProductMarquee />
+      <HowWeBuild />
       <Manifesto />
       <Founders />
       <BackedBy />

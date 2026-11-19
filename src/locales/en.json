@@ -6,6 +6,7 @@
   },
   "nav": {
     "product": "Product",
+    "how": "How we build",
     "vision": "Vision",
     "team": "Team",
     "contact": "Contact"
@@ -19,9 +20,9 @@
       "line2Post": " to",
       "line3": "everyday life."
     },
-    "sub": "A Vancouver-based AI research studio building products that make ordinary moments better.",
+    "sub": "A Vancouver-based studio building products that make ordinary moments better — and running our company on AI to do it.",
     "ctaPrimary": "Get in touch",
-    "ctaSecondary": "See arotaro — our first product"
+    "ctaSecondary": "See what we’re building"
   },
   "who": {
     "eyebrow": "01 — Who we are",
@@ -36,18 +37,57 @@
   },
   "productMarquee": {
     "eyebrow": "02 — What we’re building",
-    "tagline": "A mental wellness companion — tarot, astrology, and fortune telling in a safe space to talk through whatever’s on your mind. Counselling at your fingertips, 24/7.",
-    "metaWellness": "MENTAL WELLNESS",
-    "metaTarot": "TAROT · ASTROLOGY",
-    "metaAlways": "24/7",
-    "linkLabel": "Visit arotaro.ai",
-    "mockLabel": "arotaro · live",
-    "mockUser1": "I’ve been feeling stuck lately. Can you pull a card?",
-    "mockAi1": "Of course. Take a breath — I drew The Star for you. It’s a sign of quiet hope after a hard stretch. What feels heaviest right now?",
-    "mockUser2": "Work. I can’t tell if I’m burnt out or just lost."
+    "arotaro": {
+      "tagline": "A mental wellness companion — tarot, astrology, and fortune telling in a safe space to talk through whatever’s on your mind. Counselling at your fingertips, 24/7.",
+      "meta": ["MENTAL WELLNESS", "TAROT · ASTROLOGY", "24/7"],
+      "linkLabel": "Visit arotaro.ai",
+      "mockLabel": "arotaro · live",
+      "mockUser1": "I’ve been feeling stuck lately. Can you pull a card?",
+      "mockAi1": "Of course. Take a breath — I drew The Star for you. It’s a sign of quiet hope after a hard stretch. What feels heaviest right now?",
+      "mockUser2": "Work. I can’t tell if I’m burnt out or just lost."
+    },
+    "blinc": {
+      "tagline": "Every loyalty card, one tap away. Blinc keeps your rewards and membership cards in one fast, private place — tap a card and the barcode fills the screen, ready to scan. Works offline, no account needed, and your cards never leave your phone.",
+      "meta": ["LOYALTY WALLET", "OFFLINE", "iOS · ANDROID"],
+      "linkLabel": "Visit blinc.metis-ai.io",
+      "mockLabel": "blinc · tap to scan",
+      "mockCardMark": "C",
+      "mockCardName": "Corner Café",
+      "mockCardSub": "REWARDS",
+      "mockStat": "from tap to barcode"
+    }
+  },
+  "howWeBuild": {
+    "eyebrow": "03 — How we build",
+    "name": "Metis OS",
+    "titleLine1": "A small team,",
+    "titleLine2Em": "with AI employees.",
+    "body1": "Metis OS is the operating system we built to run Metis. It’s where our AI employees work alongside us — answering questions, writing the morning numbers, planning roadmaps, and keeping every product we run in good shape.",
+    "body2": "It’s how a team our size ships and operates more than one product, and it’s where we learn first-hand what working with AI actually takes. Those lessons go straight back into everything we build.",
+    "pillars": [
+      {
+        "title": "AI employees",
+        "body": "Agents with installable skills that research, answer, and write — on request or on a schedule."
+      },
+      {
+        "title": "Reports you can trust",
+        "body": "Daily digests built from queries a person approved, so the numbers mean the same thing every day."
+      },
+      {
+        "title": "Roadmaps, planned together",
+        "body": "Agents triage feedback and propose plans. A person approves before anything gets built."
+      },
+      {
+        "title": "One door to every product",
+        "body": "The operating surface for each product we run — arotaro and Blinc included."
+      }
+    ],
+    "shotAlt": "Metis OS showing the Blinc project: the integrations its AI employees can use, shared by the team or connected for Blinc alone.",
+    "shotCaption": "Metis OS · the Blinc project",
+    "meta": "INTERNAL · IN DAILY USE AT METIS"
   },
   "manifesto": {
-    "eyebrow": "03 — How we think",
+    "eyebrow": "04 — How we think",
     "principles": [
       {
         "n": "01",
@@ -67,7 +107,7 @@
     ]
   },
   "founders": {
-    "eyebrow": "04 — The team",
+    "eyebrow": "05 — The team",
     "titleLine1": "A small studio from Vancouver,",
     "titleLine2Em": "building the future quietly.",
     "members": [
@@ -105,7 +145,7 @@
     "logoSub": "for Startups Founders Hub"
   },
   "contact": {
-    "eyebrow": "05 — Work with us",
+    "eyebrow": "06 — Work with us",
     "titleLine1": "Have an idea, a partnership,",
     "titleLine2Pre": "or just want to ",
     "titleLine2Em": "say hi?",
@@ -114,6 +154,7 @@
   "footer": {
     "links": {
       "arotaro": "arotaro",
+      "blinc": "blinc",
       "team": "team",
       "contact": "contact"
     },

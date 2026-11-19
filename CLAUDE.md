@@ -17,14 +17,17 @@ No test runner or linter is configured.
 
 Single-page React app with section-based component structure. Each section is a self-contained directory under `src/` with its own `.js` and `.css` files:
 
-- **Header** — logo + contact nav
-- **Services** — hero section
-- **Vision** — company vision
-- **Product** — product showcase
-- **Solution** — solutions overview
-- **Footer** — footer links
+- **Ambient** — fixed background blobs + grid
+- **Nav** — logo, section links, language switcher, contact CTA
+- **Hero** — headline and CTAs
+- **WhoWeAre** (`#vision`) — company statement
+- **ProductMarquee** (`#product`) — one showcase per product: arotaro, Blinc (`#blinc`)
+- **HowWeBuild** (`#how`) — Metis OS, our internal AI-employee platform. It is sign-in only, so it is presented as how we work: no link, no architecture detail
+- **Manifesto**, **Founders** (`#team`), **BackedBy**, **Contact**, **Footer**
 
-`src/App.js` composes all sections in page order. Entry point is `src/index.js`.
+`src/App.js` composes all sections in page order. Entry point is `src/index.js`. `Header`, `Services`, `Vision`, `Product`, `Solution` and `Badge` are the previous design and are no longer rendered.
+
+All copy lives in `src/locales/en.json` and `src/locales/ja.json` (react-i18next, set up in `src/i18n.js`). Every visible string needs both. Product facts (Blinc store links, claims such as "~60ms tap to barcode") come from the Blinc repo's `store/` listings and `site/index.html`; keep them in sync with those rather than writing new claims here.
 
 ## Styling
 

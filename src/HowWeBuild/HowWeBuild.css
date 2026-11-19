@@ -1,0 +1,145 @@
+.how {
+  padding: 140px 0;
+  border-top: 1px solid var(--hairline);
+  position: relative;
+  z-index: 1;
+}
+
+.how-eyebrow { margin-bottom: 80px; }
+
+.how-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 96px;
+}
+
+.how-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--blue-mist);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.how-title {
+  font-size: clamp(40px, 5.4vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  margin: 0;
+}
+
+.how-body {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--mist);
+  margin: 0 0 20px;
+}
+
+.how-body:last-child { margin-bottom: 0; }
+
+.how-shot {
+  position: relative;
+  margin: 0 0 96px;
+}
+
+.how-shot-glow {
+  position: absolute;
+  inset: -8% 5%;
+  background: radial-gradient(ellipse at 50% 50%, rgba(67, 141, 241, 0.22) 0%, transparent 65%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.how-shot-frame {
+  position: relative;
+  padding: 8px;
+  border-radius: 18px;
+  background: rgba(10, 20, 50, 0.5);
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.how-shot-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.how-shot-caption {
+  position: relative;
+  margin-top: 16px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--mist);
+  text-transform: uppercase;
+}
+
+.how-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--hairline);
+}
+
+.how-pillar {
+  padding: 36px 28px 0 0;
+}
+
+.how-pillar + .how-pillar {
+  padding-left: 28px;
+  border-left: 1px solid var(--hairline);
+}
+
+.how-pillar-title {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--text);
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.how-pillar-body {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--mist);
+  margin: 0;
+}
+
+.how-meta {
+  margin-top: 64px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--mist);
+}
+
+@media (max-width: 900px) {
+  .how { padding: 80px 0; }
+  .how-eyebrow { margin-bottom: 48px; }
+  .how-grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 56px; }
+  .how-shot { margin-bottom: 56px; }
+  .how-shot-frame { padding: 4px; border-radius: 12px; }
+  .how-shot-frame img { border-radius: 9px; }
+  .how-pillars { grid-template-columns: 1fr 1fr; }
+  .how-pillar,
+  .how-pillar + .how-pillar {
+    padding: 28px 0;
+    border-left: none;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .how-pillar:nth-child(odd) { padding-right: 20px; }
+  .how-pillar:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--hairline); }
+  .how-body { font-size: 15px; }
+  .how-meta { margin-top: 40px; }
+}
+
+@media (max-width: 560px) {
+  .how-pillars { grid-template-columns: 1fr; }
+  .how-pillar:nth-child(odd),
+  .how-pillar:nth-child(even) { padding: 24px 0; border-left: none; }
+}
