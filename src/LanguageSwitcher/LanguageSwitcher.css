@@ -1,48 +1,49 @@
 .lang-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  border: 1px solid var(--hairline);
-  border-radius: 999px;
-  background: rgba(5, 10, 28, 0.4);
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
 }
+
+/* The active pill slides between the two options. */
+.lang-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  border-radius: 9px;
+  background: rgba(148, 163, 214, 0.16);
+  transition: transform var(--t-std) var(--ease);
+}
+
+.lang-switch[data-lang="ja"]::before { transform: translateX(100%); }
 
 .lang-switch-btn {
-  font-family: var(--font-mono, ui-monospace, monospace);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--mist);
-  background: transparent;
+  position: relative;
+  min-width: 52px;
+  min-height: 34px;
+  padding: 0 10px;
   border: 0;
-  padding: 4px 8px;
-  border-radius: 999px;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink-3);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
-  transition: color 0.2s ease, background 0.2s ease;
+  transition: color var(--t-quick) var(--ease);
 }
 
-.lang-switch-btn:hover {
-  color: var(--blue-soft);
-}
+.lang-switch-btn:hover { color: var(--ink); }
+.lang-switch-btn[aria-pressed="true"] { color: var(--ink); }
 
-.lang-switch-btn.is-active {
-  color: #FFFFFF;
-  background: rgba(26, 62, 243, 0.35);
-}
+.lang-switch-btn--ja { font-family: var(--font-ja); }
 
-.lang-switch-sep {
-  width: 1px;
-  height: 12px;
-  background: var(--hairline);
-}
-
-@media (max-width: 480px) {
-  .lang-switch {
-    padding: 3px 6px;
-  }
-  .lang-switch-btn {
-    font-size: 10px;
-    padding: 3px 6px;
-  }
+@media (prefers-reduced-motion: reduce) {
+  .lang-switch::before { transition: none; }
 }

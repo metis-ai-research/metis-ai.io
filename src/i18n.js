@@ -33,7 +33,8 @@ i18n
     load: "languageOnly",
     nonExplicitSupportedLngs: true,
     detection: {
-      order: ["hash", "localStorage", "navigator"],
+      order: ["hash", "querystring", "localStorage", "navigator"],
+      lookupQuerystring: "lang",
       caches: ["localStorage"],
       lookupLocalStorage: "i18nextLng",
     },

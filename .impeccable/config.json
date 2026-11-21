@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "mona sans",
+        "createdAt": "2026-11-21T15:26:05.713Z",
+        "reason": "finish reviewer: face named in the direction contract, self-hosted; not upheld"
+      }
+    ]
+  }
+}

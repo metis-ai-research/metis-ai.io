@@ -9,21 +9,32 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="container footer-row">
-        <a href="#top" className="footer-mark" aria-label="Metis">
-          <Logo variant="dark" markOnly width={22} height={35} />
-        </a>
-
-        <div className="footer-links">
-          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer" className="link-underline">{t("footer.links.arotaro")}</a>
-          <a href="https://blinc.metis-ai.io" target="_blank" rel="noopener noreferrer" className="link-underline">{t("footer.links.blinc")}</a>
-          <a href="#team" className="link-underline">{t("footer.links.team")}</a>
-          <a href="mailto:info@metis-ai.io" className="link-underline">{t("footer.links.contact")}</a>
+      <div className="container">
+      <div className="footer-grid">
+        <div className="footer-brand">
+          <a href="#top" className="footer-logo" aria-label={t("nav.home")}>
+            <Logo variant="dark" width={104} height={31} />
+          </a>
+          <p className="footer-meta">{t("footer.location")}</p>
         </div>
 
-        <div className="mono footer-meta">
-          {t("footer.metaLocation")} &middot; &copy; {year}
-        </div>
+        <nav className="footer-col" aria-label={t("footer.products")}>
+          <h2 className="footer-h">{t("footer.products")}</h2>
+          <a href="https://arotaro.ai" target="_blank" rel="noopener noreferrer">{t("footer.links.arotaro")}</a>
+          <a href="https://blinc.metis-ai.io" target="_blank" rel="noopener noreferrer">{t("footer.links.blinc")}</a>
+        </nav>
+
+        <nav className="footer-col" aria-label={t("footer.company")}>
+          <h2 className="footer-h">{t("footer.company")}</h2>
+          <a href="#how">{t("footer.links.how")}</a>
+          <a href="#team">{t("footer.links.team")}</a>
+          <a href="mailto:info@metis-ai.io">{t("footer.links.contact")}</a>
+        </nav>
+      </div>
+      <div className="footer-base">
+        <span>© {year} {t("footer.rights")}</span>
+        <span>info@metis-ai.io</span>
+      </div>
       </div>
     </footer>
   );

@@ -1,75 +1,49 @@
-.who {
-  padding: 140px 0;
-  border-top: 1px solid var(--hairline);
-  position: relative;
-  z-index: 1;
-}
+.who { padding-top: 88px; }
 
-.who-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.who-left {
-  position: sticky;
-  top: 120px;
-}
-
-.who-eyebrow {
-  margin-bottom: 32px;
-}
-
-.who-quote {
-  font-size: clamp(36px, 4.8vw, 64px);
-  line-height: 1.05;
-  color: var(--text);
+.who-statement {
   margin: 0;
-  letter-spacing: -0.02em;
+  max-width: 22ch;
+  font-size: clamp(2rem, 4.4vw, 3.75rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 560;
 }
 
-.who-right {
-  padding-top: 12px;
+html[lang="ja"] .who-statement {
+  max-width: 19em;
+  font-size: clamp(1.625rem, 3.2vw, 2.75rem);
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+/* Each unit brightens as the scroll progress (--p) passes its position.
+   Without JS --p is unset and falls back to 1, so the text is simply bright. */
+.who-word {
+  --on: clamp(0, calc(var(--p, 1) * (var(--n) + 4) - var(--i)), 1);
+  opacity: calc(0.2 + 0.8 * var(--on));
+  color: color-mix(in srgb, var(--ink) calc(var(--on) * 100%), var(--blue-soft));
 }
 
 .who-body {
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--mist);
-  margin-bottom: 24px;
-  max-width: 520px;
+  margin: 72px 0 0 auto;
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-.who-body:last-of-type {
-  margin-bottom: 48px;
+.who-body p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 1.0625rem;
+  line-height: 1.7;
 }
 
-.who-signature {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  padding-top: 24px;
-  border-top: 1px solid var(--hairline);
+@media (max-width: 760px) {
+  .who-body { grid-template-columns: 1fr; gap: 20px; margin-top: 48px; }
 }
 
-.who-sig-label {
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  color: var(--mist);
-}
-
-.who-sig-names {
-  font-size: 28px;
-  color: var(--text);
-  font-style: italic;
-}
-
-@media (max-width: 900px) {
-  .who { padding: 80px 0; }
-  .who-grid { grid-template-columns: 1fr; gap: 40px; }
-  .who-left { position: static; }
-  .who-quote { font-size: 32px; }
-  .who-body { font-size: 16px; }
-  .who-sig-names { font-size: 22px; }
+@media (prefers-reduced-motion: reduce) {
+  .who-word { opacity: 1; color: var(--ink); }
 }

@@ -7,21 +7,17 @@ const Manifesto = () => {
   const principles = t("manifesto.principles", { returnObjects: true });
 
   return (
-    <section className="manifesto">
-      <div className="container">
-        <div className="eyebrow manifesto-eyebrow">{t("manifesto.eyebrow")}</div>
-
-        <div className="manifesto-list">
+    <section className="section manifesto" aria-labelledby="manifesto-title">
+      <div className="container manifesto-grid">
+        <h2 id="manifesto-title" className="h-section manifesto-heading reveal">{t("manifesto.heading")}</h2>
+        <ol className="principles">
           {principles.map((p) => (
-            <article key={p.n} className="principle">
-              <div className="principle-number mono">{p.n}</div>
-              <div className="principle-content">
-                <h3 className="principle-title display">{p.title}</h3>
-                <p className="principle-body">{p.body}</p>
-              </div>
-            </article>
+            <li key={p.title} className="principle reveal">
+              <h3 className="principle-title">{p.title}</h3>
+              <p className="principle-body">{p.body}</p>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );

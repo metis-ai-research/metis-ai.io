@@ -1,145 +1,231 @@
-.how {
-  padding: 140px 0;
-  border-top: 1px solid var(--hairline);
-  position: relative;
-  z-index: 1;
-}
+.how { background: var(--bg-raise); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
-.how-eyebrow { margin-bottom: 80px; }
-
-.how-grid {
+.how-intro {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 80px;
   align-items: end;
   margin-bottom: 96px;
 }
 
-.how-name {
+.how-copy p {
+  margin: 0 0 18px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+.how-copy p:last-child { margin-bottom: 0; }
+
+/* ---------- Approval flow ---------- */
+
+.flow {
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  box-shadow: var(--shadow-lg);
+}
+
+.flow-head {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  color: var(--blue-mist);
-  text-transform: uppercase;
-  margin-bottom: 28px;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
-.how-title {
-  font-size: clamp(40px, 5.4vw, 72px);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
-  color: var(--text);
+.flow-label {
   margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-.how-body {
-  font-size: 17px;
-  line-height: 1.65;
-  color: var(--mist);
-  margin: 0 0 20px;
+.flow-replay {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
 }
+.flow-replay:hover { color: var(--ink); background: rgba(148, 163, 214, 0.08); }
 
-.how-body:last-child { margin-bottom: 0; }
-
-.how-shot {
+.flow-track {
+  --marker: 32px;
   position: relative;
-  margin: 0 0 96px;
-}
-
-.how-shot-glow {
-  position: absolute;
-  inset: -8% 5%;
-  background: radial-gradient(ellipse at 50% 50%, rgba(67, 141, 241, 0.22) 0%, transparent 65%);
-  filter: blur(40px);
-  pointer-events: none;
-}
-
-.how-shot-frame {
-  position: relative;
-  padding: 8px;
-  border-radius: 18px;
-  background: rgba(10, 20, 50, 0.5);
-  border: 1px solid var(--hairline-strong);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
-}
-
-.how-shot-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.how-shot-caption {
-  position: relative;
-  margin-top: 16px;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  color: var(--mist);
-  text-transform: uppercase;
-}
-
-.how-pillars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--hairline);
+  gap: 24px;
 }
 
-.how-pillar {
-  padding: 36px 28px 0 0;
+/* The rail behind the markers, and its blue fill driven by --fill (0..1). */
+.flow-track::before,
+.flow-track::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--marker) / 2 - 1px);
+  left: calc(var(--marker) / 2);
+  /* Ends at the last marker: one column width (minus its share of gaps) from the right. */
+  right: calc((100% - 3 * 24px) / 4 - var(--marker) / 2);
+  height: 2px;
+  border-radius: 2px;
+  background: var(--line-strong);
 }
 
-.how-pillar + .how-pillar {
-  padding-left: 28px;
-  border-left: 1px solid var(--hairline);
+.flow-track::after {
+  background: var(--blue);
+  transform-origin: 0 50%;
+  transform: scaleX(var(--fill));
+  transition: transform 1000ms var(--ease-in-out);
 }
+
+.flow-step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flow-marker {
+  width: var(--marker);
+  height: var(--marker);
+  margin-bottom: 14px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--panel);
+  border: 2px solid var(--line-strong);
+  color: #fff;
+  transition: background var(--t-std) var(--ease), border-color var(--t-std) var(--ease), transform var(--t-std) var(--ease);
+}
+
+.flow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink-3);
+  transition: background var(--t-std) var(--ease);
+}
+
+.flow-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink-3);
+  transition: color var(--t-std) var(--ease);
+}
+
+.flow-body {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+.flow-step--done .flow-marker { background: var(--blue); border-color: var(--blue); }
+.flow-step--done .flow-title { color: var(--ink); }
+
+.flow-step--active .flow-marker {
+  border-color: var(--blue-soft);
+  transform: scale(1.12);
+  animation: flow-pulse 1100ms var(--ease) both;
+}
+.flow-step--active .flow-dot { background: var(--blue-soft); }
+.flow-step--active .flow-title { color: var(--ink); }
+
+.flow-step--active:last-child .flow-marker { background: var(--blue); border-color: var(--blue); }
+
+/* The human gate gets its own mark when it is cleared. */
+.flow-step--gate.flow-step--done .flow-title::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background: #4ed6a0;
+  vertical-align: middle;
+}
+
+@keyframes flow-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(134, 166, 251, 0.45); }
+  100% { box-shadow: 0 0 0 14px rgba(134, 166, 251, 0); }
+}
+
+/* ---------- Pillars ---------- */
+
+.how-pillars {
+  list-style: none;
+  margin: 96px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.how-pillar { padding-top: 24px; border-top: 1px solid var(--line-strong); }
 
 .how-pillar-title {
-  font-size: 22px;
-  line-height: 1.2;
-  color: var(--text);
-  margin: 0 0 12px;
+  margin: 0 0 10px;
+  font-size: 1.125rem;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
 
 .how-pillar-body {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--mist);
   margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-2);
 }
 
-.how-meta {
-  margin-top: 64px;
-  font-size: 11px;
-  letter-spacing: 0.16em;
-  color: var(--mist);
+.how-note {
+  margin: 64px 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-3);
 }
 
-@media (max-width: 900px) {
-  .how { padding: 80px 0; }
-  .how-eyebrow { margin-bottom: 48px; }
-  .how-grid { grid-template-columns: 1fr; gap: 32px; margin-bottom: 56px; }
-  .how-shot { margin-bottom: 56px; }
-  .how-shot-frame { padding: 4px; border-radius: 12px; }
-  .how-shot-frame img { border-radius: 9px; }
-  .how-pillars { grid-template-columns: 1fr 1fr; }
-  .how-pillar,
-  .how-pillar + .how-pillar {
-    padding: 28px 0;
-    border-left: none;
-    border-bottom: 1px solid var(--hairline);
+@media (max-width: 960px) {
+  .how-intro { grid-template-columns: 1fr; gap: 32px; margin-bottom: 64px; }
+  .how-pillars { grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 64px; }
+}
+
+/* Vertical flow on narrow screens: the rail runs down the left edge. */
+@media (max-width: 760px) {
+  .flow { padding: 28px 22px; }
+  .flow-head { margin-bottom: 28px; }
+  .flow-track { grid-template-columns: 1fr; gap: 28px; }
+  .flow-step { padding-left: calc(var(--marker) + 18px); }
+  .flow-marker { position: absolute; left: 0; top: -4px; margin: 0; }
+  .flow-track::before,
+  .flow-track::after {
+    top: calc(var(--marker) / 2);
+    bottom: 40px;
+    left: calc(var(--marker) / 2 - 1px);
+    right: auto;
+    width: 2px;
+    height: auto;
   }
-  .how-pillar:nth-child(odd) { padding-right: 20px; }
-  .how-pillar:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--hairline); }
-  .how-body { font-size: 15px; }
-  .how-meta { margin-top: 40px; }
+  .flow-track::after { transform-origin: 50% 0; transform: scaleY(var(--fill)); }
 }
 
 @media (max-width: 560px) {
   .how-pillars { grid-template-columns: 1fr; }
-  .how-pillar:nth-child(odd),
-  .how-pillar:nth-child(even) { padding: 24px 0; border-left: none; }
+}
+
+.flow--still .flow-track::after { transition: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-track::after,
+  .flow-marker,
+  .flow-title { transition: none; }
+  .flow-step--active .flow-marker { animation: none; }
 }
