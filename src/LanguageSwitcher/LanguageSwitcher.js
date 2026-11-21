@@ -9,26 +9,29 @@ const LanguageSwitcher = () => {
   const setLang = (lng) => {
     if (lng === current) return;
     i18n.changeLanguage(lng);
-    if (window.location.hash) {
-      const next = `#${lng}`;
-      if (window.location.hash !== next) window.location.hash = next;
+    // A #en / #ja hash is a shareable language link; keep it in sync only when
+    // it is the current hash, so section anchors like #product are untouched.
+    const hash = window.location.hash.replace("#", "").toLowerCase();
+    if (["en", "ja", "english", "japanese"].includes(hash)) {
+      window.history.replaceState(null, "", `#${lng}`);
     }
   };
 
   return (
-    <div className="lang-switch" role="group" aria-label={t("languageSwitcher.label")}>
+    <div className="lang-switch" role="group" aria-label={t("languageSwitcher.label")} data-lang={current}>
       <button
         type="button"
-        className={`lang-switch-btn ${current === "en" ? "is-active" : ""}`}
+        lang="en"
+        className="lang-switch-btn"
         onClick={() => setLang("en")}
         aria-pressed={current === "en"}
       >
         {t("languageSwitcher.english")}
       </button>
-      <span className="lang-switch-sep" aria-hidden="true" />
       <button
         type="button"
-        className={`lang-switch-btn ${current === "ja" ? "is-active" : ""}`}
+        lang="ja"
+        className="lang-switch-btn lang-switch-btn--ja"
         onClick={() => setLang("ja")}
         aria-pressed={current === "ja"}
       >

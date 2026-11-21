@@ -1,5 +1,5 @@
-import React from "react";
-import Ambient from "./Ambient/Ambient";
+import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Nav from "./Nav/Nav";
 import Hero from "./Hero/Hero";
 import WhoWeAre from "./WhoWeAre/WhoWeAre";
@@ -7,23 +7,31 @@ import ProductMarquee from "./ProductMarquee/ProductMarquee";
 import HowWeBuild from "./HowWeBuild/HowWeBuild";
 import Manifesto from "./Manifesto/Manifesto";
 import Founders from "./Founders/Founders";
-import BackedBy from "./BackedBy/BackedBy";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import { useRevealAll } from "./motion";
 
 function App() {
+  const { t, i18n } = useTranslation();
+  useRevealAll();
+
+  useEffect(() => {
+    document.title = t("meta.title");
+  }, [t, i18n.language]);
+
   return (
     <>
-      <Ambient />
+      <a href="#main" className="skip-link">{t("meta.skip")}</a>
       <Nav />
-      <Hero />
-      <WhoWeAre />
-      <ProductMarquee />
-      <HowWeBuild />
-      <Manifesto />
-      <Founders />
-      <BackedBy />
-      <Contact />
+      <main id="main">
+        <Hero />
+        <ProductMarquee />
+        <WhoWeAre />
+        <HowWeBuild />
+        <Manifesto />
+        <Founders />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

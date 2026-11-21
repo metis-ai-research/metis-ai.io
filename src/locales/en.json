@@ -1,73 +1,125 @@
 {
+  "meta": {
+    "title": "Metis AI Research: a small team that ships, running on AI",
+    "skip": "Skip to content"
+  },
   "languageSwitcher": {
     "label": "Language",
     "english": "EN",
     "japanese": "日本語"
   },
   "nav": {
-    "product": "Product",
-    "how": "How we build",
+    "home": "Metis AI Research, home",
+    "primary": "Primary",
+    "product": "Products",
+    "how": "How we work",
     "vision": "Vision",
     "team": "Team",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
-    "eyebrow": "VANCOUVER · AI RESEARCH",
-    "title": {
-      "line1": "Intelligence,",
-      "line2Pre": "",
-      "line2Em": "quietly delivered",
-      "line2Post": " to",
-      "line3": "everyday life."
-    },
-    "sub": "A Vancouver-based studio building products that make ordinary moments better — and running our company on AI to do it.",
-    "ctaPrimary": "Get in touch",
-    "ctaSecondary": "See what we’re building"
+    "titleLine1": "A small team that ships,",
+    "titleLine2": "running on AI.",
+    "sub": "Metis AI Research is a studio in Vancouver. We build and operate live products, arotaro and Blinc, with AI employees working alongside us.",
+    "ctaPrimary": "Start a conversation",
+    "ctaSecondary": "See our products",
+    "shotAlt": "Metis OS, the system we run the company on, showing the Blinc project and the integrations its AI employees can use.",
+    "shotCaption": "Metis OS, our internal operating system, in daily use."
   },
   "who": {
-    "eyebrow": "01 — Who we are",
-    "quotePre": "We believe AI’s highest purpose is",
-    "quoteEm": " making ordinary moments better",
-    "quotePost": ".",
-    "body1": "Metis AI Research was founded in Vancouver on the belief that the AI era demands companies that build with care. Our mission is to revolutionize how people live and work through innovative, AI-powered solutions.",
-    "body2": "Whether it’s personalized learning, intelligent assistants, or tools that simplify complex tasks, we focus on creating seamless experiences that elevate daily interactions — and stay out of the way when they should.",
-    "body3": "We believe in the transformative potential of AI to positively impact every aspect of life, and we’re building quietly toward that future.",
-    "signedLabel": "SIGNED",
-    "signedName": "The Metis team"
+    "heading": "Our vision",
+    "statement": "We believe AI’s highest purpose is making ordinary moments better, and that the AI era needs companies that build with care.",
+    "body1": "Metis AI Research was founded in Vancouver to change how people live and work through AI-powered products. Personalized learning, intelligent assistants, tools that make complex tasks simple: we focus on experiences that lift daily life and stay out of the way when they should.",
+    "body2": "We believe AI can improve almost every part of life, and we’re building quietly toward that future, one product at a time."
   },
-  "productMarquee": {
-    "eyebrow": "02 — What we’re building",
+  "products": {
+    "heading": "Two products, live today.",
+    "sub": "Each one is designed, shipped and run by the four of us.",
     "arotaro": {
-      "tagline": "A mental wellness companion — tarot, astrology, and fortune telling in a safe space to talk through whatever’s on your mind. Counselling at your fingertips, 24/7.",
-      "meta": ["MENTAL WELLNESS", "TAROT · ASTROLOGY", "24/7"],
+      "tagline": "A mental wellness companion: tarot, astrology and fortune telling in a safe space to talk through whatever’s on your mind. Counselling at your fingertips, 24/7.",
+      "facts": [
+        "Mental wellness",
+        "Tarot and astrology",
+        "Available 24/7"
+      ],
       "linkLabel": "Visit arotaro.ai",
-      "mockLabel": "arotaro · live",
+      "demoLabel": "Example arotaro conversation",
+      "demoTitle": "arotaro",
+      "demoStatus": "Online",
       "mockUser1": "I’ve been feeling stuck lately. Can you pull a card?",
-      "mockAi1": "Of course. Take a breath — I drew The Star for you. It’s a sign of quiet hope after a hard stretch. What feels heaviest right now?",
-      "mockUser2": "Work. I can’t tell if I’m burnt out or just lost."
+      "mockAi1": "Of course. Take a breath. I drew The Star for you, a sign of quiet hope after a hard stretch. What feels heaviest right now?",
+      "mockUser2": "Work. I can’t tell if I’m burnt out or just lost.",
+      "typing": "arotaro is replying",
+      "mockAi2": "That sounds heavy. Let’s pull one more card, for what you need this week, and go from there.",
+      "sample": "Sample"
     },
     "blinc": {
-      "tagline": "Every loyalty card, one tap away. Blinc keeps your rewards and membership cards in one fast, private place — tap a card and the barcode fills the screen, ready to scan. Works offline, no account needed, and your cards never leave your phone.",
-      "meta": ["LOYALTY WALLET", "OFFLINE", "iOS · ANDROID"],
+      "tagline": "Every loyalty card, one tap away. Blinc keeps your rewards and membership cards in one fast, private place. Tap a card and the barcode fills the screen, ready to scan. Works offline, needs no account, and your cards never leave your phone.",
+      "facts": [
+        "Loyalty wallet",
+        "Works offline",
+        "iOS and Android"
+      ],
       "linkLabel": "Visit blinc.metis-ai.io",
-      "mockLabel": "blinc · tap to scan",
-      "mockCardMark": "C",
-      "mockCardName": "Corner Café",
-      "mockCardSub": "REWARDS",
-      "mockStat": "from tap to barcode"
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "demoLabel": "Try it: tap a card to show its barcode",
+      "demoHint": "Tap a card",
+      "back": "Back to cards",
+      "stat": "~60ms from tap to barcode",
+      "sample": "Sample cards",
+      "cards": [
+        {
+          "mark": "C",
+          "name": "Corner Café",
+          "kind": "Rewards",
+          "digits": "4 901234 567894"
+        },
+        {
+          "mark": "N",
+          "name": "Northshore Books",
+          "kind": "Member",
+          "digits": "9 780201 379624"
+        },
+        {
+          "mark": "H",
+          "name": "Harbour Grocers",
+          "kind": "Points",
+          "digits": "0 712345 678911"
+        }
+      ]
     }
   },
   "howWeBuild": {
-    "eyebrow": "03 — How we build",
-    "name": "Metis OS",
-    "titleLine1": "A small team,",
-    "titleLine2Em": "with AI employees.",
-    "body1": "Metis OS is the operating system we built to run Metis. It’s where our AI employees work alongside us — answering questions, writing the morning numbers, planning roadmaps, and keeping every product we run in good shape.",
+    "heading": "People and AI employees, one team.",
+    "body1": "Metis OS is the operating system we built to run Metis. Our AI employees work there alongside us: answering questions, writing the morning numbers, planning roadmaps, and keeping every product we run in good shape.",
     "body2": "It’s how a team our size ships and operates more than one product, and it’s where we learn first-hand what working with AI actually takes. Those lessons go straight back into everything we build.",
+    "flowLabel": "How a change moves through Metis OS",
+    "flow": [
+      {
+        "title": "Feedback arrives",
+        "body": "From users, reviews and the team."
+      },
+      {
+        "title": "An agent proposes a plan",
+        "body": "It triages the feedback and drafts the work."
+      },
+      {
+        "title": "A person approves",
+        "body": "Nothing gets built without a yes."
+      },
+      {
+        "title": "It ships",
+        "body": "And the AI employees keep it running."
+      }
+    ],
+    "replay": "Replay",
     "pillars": [
       {
         "title": "AI employees",
-        "body": "Agents with installable skills that research, answer, and write — on request or on a schedule."
+        "body": "Agents with installable skills that research, answer and write, on request or on a schedule."
       },
       {
         "title": "Reports you can trust",
@@ -79,85 +131,79 @@
       },
       {
         "title": "One door to every product",
-        "body": "The operating surface for each product we run — arotaro and Blinc included."
+        "body": "The operating surface for each product we run, arotaro and Blinc included."
       }
     ],
-    "shotAlt": "Metis OS showing the Blinc project: the integrations its AI employees can use, shared by the team or connected for Blinc alone.",
-    "shotCaption": "Metis OS · the Blinc project",
-    "meta": "INTERNAL · IN DAILY USE AT METIS"
+    "note": "Metis OS is internal and in daily use at Metis."
   },
   "manifesto": {
-    "eyebrow": "04 — How we think",
+    "heading": "How we think",
     "principles": [
       {
-        "n": "01",
         "title": "AI should feel inevitable, not impressive.",
-        "body": "The best technology disappears. We don’t build demos for the AI era — we build products that feel obvious in hindsight, the kind you can’t imagine living without a month after using them."
+        "body": "The best technology disappears. We don’t build demos for the AI era. We build products that feel obvious in hindsight, the kind you can’t imagine living without a month after you start using them."
       },
       {
-        "n": "02",
         "title": "Personalization is a craft, not a feature.",
-        "body": "Every product we create is shaped to your actual life — whether for learning, productivity, or wellbeing. Generic AI is loud; personal AI is quiet and precise. We choose precision."
+        "body": "Every product we create is shaped to your actual life, whether that’s learning, productivity or wellbeing. Generic AI is loud; personal AI is quiet and precise. We choose precision."
       },
       {
-        "n": "03",
         "title": "Small teams with strong taste outperform big teams with big budgets.",
-        "body": "We are a small team, supported by Microsoft for Startups Founders Hub, building with focus and conviction. The future belongs to teams that care about details other people skip."
+        "body": "We are a small team building with focus and conviction. The future belongs to teams that care about the details other people skip."
       }
     ]
   },
   "founders": {
-    "eyebrow": "05 — The team",
-    "titleLine1": "A small studio from Vancouver,",
-    "titleLine2Em": "building the future quietly.",
+    "heading": "The people behind Metis.",
+    "sub": "Four people, each owning a whole discipline.",
     "members": [
-        {
-            "initial": "S",
-            "name": "Sarah",
-            "role": "Design · Co-founder",
-            "bio": "Experienced designer, formerly at Microsoft, with years of craft building UX that feels effortless."
-        },
-        {
-            "initial": "R",
-            "name": "Riku",
-            "role": "Engineering · Co-founder",
-            "bio": "Ex-Microsoft engineer who lives on the web stack and builds what’s best for the people on the other side of the screen."
-        },
-        {
-            "initial": "J",
-            "name": "Jason",
-            "role": "Quality · Co-founder",
-            "bio": "SET veteran from GitLab, Broadcom, and more — the kind of engineer who makes sure things actually work."
-        },
-        {
-            "initial": "A",
-            "name": "Alice",
-            "role": "Growth & Data",
-            "bio": "Drives growth through data and experimentation — from user acquisition to product insights, turning signals into decisions that scale."
-        }
+      {
+        "initial": "S",
+        "name": "Sarah",
+        "role": "Design, co-founder",
+        "bio": "Experienced designer, formerly at Microsoft, with years of craft building UX that feels effortless."
+      },
+      {
+        "initial": "R",
+        "name": "Riku",
+        "role": "Engineering, co-founder",
+        "bio": "Ex-Microsoft engineer who lives on the web stack and builds what’s best for the people on the other side of the screen."
+      },
+      {
+        "initial": "J",
+        "name": "Jason",
+        "role": "Quality, co-founder",
+        "bio": "SET veteran from GitLab, Broadcom and more: the kind of engineer who makes sure things actually work."
+      },
+      {
+        "initial": "A",
+        "name": "Alice",
+        "role": "Growth and data",
+        "bio": "Drives growth through data and experimentation, from user acquisition to product insights, turning signals into decisions that scale."
+      }
     ],
-    "locationLabel": "HEADQUARTERED",
-    "locationValue": "Vancouver, British Columbia"
-  },
-  "backed": {
-    "label": "BACKED & SUPPORTED BY",
-    "logoName": "Microsoft",
-    "logoSub": "for Startups Founders Hub"
+    "location": "Headquartered in Vancouver, British Columbia"
   },
   "contact": {
-    "eyebrow": "06 — Work with us",
-    "titleLine1": "Have an idea, a partnership,",
-    "titleLine2Pre": "or just want to ",
-    "titleLine2Em": "say hi?",
-    "metaOpen": "CURRENTLY OPEN TO CONVERSATIONS"
+    "heading": "Have an idea, a partnership, or just want to say hi?",
+    "sub": "Partnerships, product questions or a quick hello: it all comes to the same inbox.",
+    "email": "info@metis-ai.io",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "copyFailed": "Couldn’t copy. Select the address instead.",
+    "open": "Currently open to conversations"
   },
   "footer": {
+    "products": "Products",
+    "company": "Company",
     "links": {
       "arotaro": "arotaro",
-      "blinc": "blinc",
-      "team": "team",
-      "contact": "contact"
+      "blinc": "Blinc",
+      "how": "How we work",
+      "team": "Team",
+      "contact": "Contact"
     },
-    "metaLocation": "Vancouver, BC"
+    "location": "Vancouver, BC",
+    "rights": "Metis AI Research"
   }
 }

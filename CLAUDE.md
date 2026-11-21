@@ -8,30 +8,29 @@ Metis AI Research (metis-ai.io) — a static marketing/landing page for an AI co
 
 ## Commands
 
-- `npm start` — dev server on port 3000
-- `npm run build` — production build to `dist/`
+- `npm start`: dev server on port 3000
+- `npm run build`: production build to `dist/` (content-hashed JS and CSS, with CSS extracted to its own file)
 
 No test runner or linter is configured.
 
 ## Architecture
 
-Single-page React app with section-based component structure. Each section is a self-contained directory under `src/` with its own `.js` and `.css` files:
+Single-page React app with section-based component structure. Each section is a self-contained directory under `src/` with its own `.js` and `.css` files. Page order (`src/App.js`):
 
-- **Ambient** — fixed background blobs + grid
-- **Nav** — logo, section links, language switcher, contact CTA
-- **Hero** — headline and CTAs
-- **WhoWeAre** (`#vision`) — company statement
-- **ProductMarquee** (`#product`) — one showcase per product: arotaro, Blinc (`#blinc`)
-- **HowWeBuild** (`#how`) — Metis OS, our internal AI-employee platform. It is sign-in only, so it is presented as how we work: no link, no architecture detail
-- **Manifesto**, **Founders** (`#team`), **BackedBy**, **Contact**, **Footer**
+- **Nav**: logo, section links, language switcher, Contact. Below 860px the links move into a menu sheet.
+- **Hero** (`#top`): headline and CTAs. The Metis OS screenshot flattens from a tilt as you scroll.
+- **ProductMarquee** (`#product`): arotaro (a chat that plays in) and Blinc (`#blinc`, a tap-a-card barcode demo).
+- **WhoWeAre** (`#vision`): the vision statement, which brightens word by word on scroll.
+- **HowWeBuild** (`#how`): Metis OS, our internal AI-employee platform, with an animated approval flow. It is sign-in only, so it is presented as how we work: no link, no architecture detail.
+- **Manifesto**, **Founders** (`#team`), **Contact** (`#contact`, with copy-to-clipboard), **Footer**.
 
-`src/App.js` composes all sections in page order. Entry point is `src/index.js`. `Header`, `Services`, `Vision`, `Product`, `Solution` and `Badge` are the previous design and are no longer rendered.
+`src/motion.js` holds the shared motion hooks (`useRevealAll` for `.reveal` elements, `useInView`, `useScrollProgress`, `useReducedMotion`). Content is visible by default: motion only hides elements once JS confirms it may animate. Reduced motion and automated browsers (`navigator.webdriver`) get the settled final state. `src/Icons.js` is the only icon set (SVG, 1.75px stroke).
 
-All copy lives in `src/locales/en.json` and `src/locales/ja.json` (react-i18next, set up in `src/i18n.js`). Every visible string needs both. Product facts (Blinc store links, claims such as "~60ms tap to barcode") come from the Blinc repo's `store/` listings and `site/index.html`; keep them in sync with those rather than writing new claims here.
+All copy lives in `src/locales/en.json` and `src/locales/ja.json` (react-i18next, set up in `src/i18n.js`). Every visible string needs both. Language comes from `#en`/`#ja`, then `?lang=`, then localStorage, then the browser. Product facts (Blinc store links, claims such as "~60ms tap to barcode") come from the Blinc repo's `store/` listings and `site/index.html`; keep them in sync with those rather than writing new claims here.
 
 ## Styling
 
-Components use a mix of Tailwind utility classes (inline) and co-located CSS files. The Inter font is loaded via `@fontsource/inter` and set as the default sans font in `tailwind.config.js`. A custom `float` animation is defined there as well.
+Design tokens (colors, the `--ease` curve, durations) are CSS custom properties in `src/index.css`. Component styles sit beside each component. Tailwind supplies only the preflight reset. Fonts: Mona Sans (self-hosted variable woff2 in `src/fonts/`) for Latin, Murecho for Japanese, JetBrains Mono only inside product UI. Product context is in `PRODUCT.md`; the page's design direction is in `.impeccable/surfaces/src-app-js.md`.
 
 ## Static Assets
 

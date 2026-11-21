@@ -1,61 +1,92 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Check } from "../Icons";
+import { useInView, useReducedMotion } from "../motion";
 import "./HowWeBuild.css";
 
-// Metis OS — our internal operating system. It is sign-in-only (metis-ai.io Workspace
-// accounts), so it is presented as how we work, not as a product: no link, and no
-// architecture detail beyond what a visitor needs to understand the idea.
+// Metis OS is internal and sign-in only, so it is presented as how we work:
+// no link, and no architecture detail beyond what a visitor needs.
+
+const STEP_MS = 1100;
+
+const ApprovalFlow = () => {
+  const { t } = useTranslation();
+  const steps = t("howWeBuild.flow", { returnObjects: true });
+  const reduced = useReducedMotion();
+  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [active, setActive] = useState(-1);
+  const [run, setRun] = useState(0);
+
+  useEffect(() => {
+    if (!inView) return undefined;
+    if (reduced) {
+      setActive(steps.length - 1);
+      return undefined;
+    }
+    setActive(-1);
+    const timers = steps.map((_, i) => setTimeout(() => setActive(i), 250 + i * STEP_MS));
+    return () => timers.forEach(clearTimeout);
+  }, [inView, reduced, run, steps.length]);
+
+  const fill = active < 0 ? 0 : active / (steps.length - 1);
+
+  return (
+    <div className={`flow ${reduced ? "flow--still" : ""}`} ref={ref} style={{ "--fill": fill }}>
+      <div className="flow-head">
+        <h3 className="flow-label">{t("howWeBuild.flowLabel")}</h3>
+        {!reduced && (
+          <button type="button" className="flow-replay" onClick={() => setRun((r) => r + 1)}>
+            {t("howWeBuild.replay")}
+          </button>
+        )}
+      </div>
+      <ol className="flow-track">
+        {steps.map((s, i) => {
+          const state = i < active ? "done" : i === active ? "active" : "todo";
+          return (
+            <li key={s.title} className={`flow-step flow-step--${state} ${i === 2 ? "flow-step--gate" : ""}`}>
+              <span className="flow-marker" aria-hidden="true">
+                {state === "done" || (state === "active" && i === steps.length - 1) ? <Check size={14} /> : <span className="flow-dot" />}
+              </span>
+              <span className="flow-title">{s.title}</span>
+              <span className="flow-body">{s.body}</span>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+};
+
 const HowWeBuild = () => {
   const { t } = useTranslation();
   const pillars = t("howWeBuild.pillars", { returnObjects: true });
 
   return (
-    <section className="how" id="how">
+    <section className="section how" id="how" aria-labelledby="how-title">
       <div className="container">
-        <div className="eyebrow how-eyebrow">{t("howWeBuild.eyebrow")}</div>
-
-        <div className="how-grid">
-          <div className="how-left">
-            <div className="mono how-name">
-              <span className="signal-dot" /> {t("howWeBuild.name")}
-            </div>
-            <h2 className="how-title display">
-              {t("howWeBuild.titleLine1")}
-              <br />
-              <span className="italic-accent">{t("howWeBuild.titleLine2Em")}</span>
-            </h2>
-          </div>
-
-          <div className="how-right">
-            <p className="how-body">{t("howWeBuild.body1")}</p>
-            <p className="how-body">{t("howWeBuild.body2")}</p>
+        <div className="how-intro">
+          <h2 id="how-title" className="h-section reveal">{t("howWeBuild.heading")}</h2>
+          <div className="how-copy">
+            <p className="reveal" style={{ "--d": "120ms" }}>{t("howWeBuild.body1")}</p>
+            <p className="reveal" style={{ "--d": "180ms" }}>{t("howWeBuild.body2")}</p>
           </div>
         </div>
 
-        <figure className="how-shot">
-          <div className="how-shot-glow" aria-hidden="true" />
-          <div className="how-shot-frame">
-            <img
-              src="images/metis-os.png"
-              alt={t("howWeBuild.shotAlt")}
-              width="1492"
-              height="897"
-              loading="lazy"
-            />
-          </div>
-          <figcaption className="mono how-shot-caption">{t("howWeBuild.shotCaption")}</figcaption>
-        </figure>
+        <div className="reveal">
+          <ApprovalFlow />
+        </div>
 
-        <div className="how-pillars">
-          {pillars.map((p) => (
-            <article key={p.title} className="how-pillar">
-              <h3 className="how-pillar-title display">{p.title}</h3>
+        <ul className="how-pillars">
+          {pillars.map((p, i) => (
+            <li key={p.title} className="how-pillar reveal" style={{ "--d": `${i * 80}ms` }}>
+              <h3 className="how-pillar-title">{p.title}</h3>
               <p className="how-pillar-body">{p.body}</p>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <div className="mono how-meta">{t("howWeBuild.meta")}</div>
+        <p className="how-note">{t("howWeBuild.note")}</p>
       </div>
     </section>
   );
